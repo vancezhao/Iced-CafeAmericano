@@ -3,12 +3,12 @@
  */
 var desiredWidth;
 
-$(function() {
+$(function () {
     // attach fastClick button
     FastClick.attach(document.body);
 
     // handle login 
-    $('#loginBtn').on("click", function(event) {
+    $('#loginBtn').on("click", function (event) {
         console.log('User Login!');
 
         //        $.mobile.changePage("http://localhost:8080/mobile-sample/");
@@ -20,8 +20,35 @@ $(function() {
 
         //        $.mobile.pageContainer.pagecontainer("change", "redirect.html");
 
-        var url = "http://10.136.3.145:8080/mobile-sample/";
-        $(location).attr('href', url);
+        // var url = "http://10.136.3.145:8080/mobile-sample/";
+        // $(location).attr('href', url);
+
+
+        var credentials = {
+            username: 'vance',
+            password: 'test',
+            type: 'emailAddress'
+        };
+        $.ajax({
+            type: 'post',
+            url: 'http://127.0.0.1/claimApp/api/user/claimLogin',
+            data: (credentials),
+            cache: false,
+            dataType: 'text',
+            crossDomain: true,
+            success: function (data) {
+
+                console.log('data is: ' + data);
+                //$.mobile.changePage($('#main_menu'));
+
+                var url = "http://127.0.0.1/claimApp/";
+                $(location).attr('href', url);
+
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                console.log('error occus: ' + errorThrown);
+            }
+        });
 
     });
 
