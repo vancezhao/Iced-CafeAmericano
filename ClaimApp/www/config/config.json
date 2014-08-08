@@ -1,0 +1,6 @@
+{
+    "claimServiceURL": "http://10.136.3.151/claimApp/api/user",
+    "claimLoginAPI": "/claimLogin",
+    "claimProductAPI": "/product",
+    "claimImageUploadAPI": "/imageUpload"
+}
