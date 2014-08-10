@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div data-role="page">
+    <script type="text/javascript">
+        $(function () {
+            $('nav#menu').mmenu({}, {
+                classNames: {
+                    list: "buttons"}});
+        });
+    </script>
+    <div data-role="header" class="header" data-position="inline">
+        <a id="menuBtn" href="#menu" data-ajax="false"></a>
+        Claim App
+    </div>
+    <div class="content" data-role="content">
+
+    </div>
+    <nav id="menu" class="menuNav">
+        <ul>
+            <ul data-role="listview" data-inset="true" data-filter="false">
+                <li><a href="#" class="menuLink">
+                    <img src="flatUI/images/icons/svg/clipboard.svg" alt="Clipboard" class="menuImgIcon">New Claim</a>
+                </li>
+                <li><a href="#"><img src="flatUI/images/icons/svg/book.svg" class="ui-li-icon menuImgIcon">Claim Process
+                    Result
+                    <span class="ui-li-count menuSpan">2</span></a></li>
+                <li><a href="#"><img src="flatUI/images/icons/svg/calendar.svg" class="ui-li-icon menuImgIcon">History
+                    Journal</a></li>
+                <li><a href="#"><img src="flatUI/images/icons/svg/map.svg" class="ui-li-icon menuImgIcon">Insurance News
+                    <span class="ui-li-count menuSpan">8</span></a>
+                </li>
+
+                <li><a href="#"><img src="flatUI/images/icons/svg/paper-bag.svg" class="ui-li-icon menuImgIcon">My
+                    Account</a></li>
+                <li><a href="#"><img src="flatUI/images/icons/svg/retina.svg"
+                                     class="ui-li-icon menuImgIcon">Feedback</a></li>
+            </ul>
+        </ul>
+    </nav>
+</div>
+</body>
+</html>

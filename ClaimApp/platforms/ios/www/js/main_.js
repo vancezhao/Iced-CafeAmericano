@@ -3,6 +3,8 @@
  */
 $(function() {
 
+//    $('#menu').slicknav();
+
     $('#mainToTakePciture').click(function() {
         console.log('navigate to takePicture html');
         $.mobile.navigate('takePicture.html', {});
