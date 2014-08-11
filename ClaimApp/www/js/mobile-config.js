@@ -10,5 +10,12 @@ $(document).bind("mobileinit", function () {
         $.claimProductAPI = $.claimServiceURL + data.ClaimProductAPI;
         $.claimImageUploadAPI = $.claimServiceURL + data.ClaimImageUploadAPI;
         $.claimGetFormAPI = $.claimServiceURL + data.ClaimFormAPI;
+
+        //loading
+
+        $.mobile.loader.prototype.options.text = "loading";
+        $.mobile.loader.prototype.options.textVisible = false;
+        $.mobile.loader.prototype.options.theme = "a";
+        $.mobile.loader.prototype.options.html = "";
     })
 });

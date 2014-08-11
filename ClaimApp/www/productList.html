@@ -69,7 +69,10 @@
             $('#californiaProperty').click(function () {
                 console.log('californiaProperty click!');
 //                $.mobile.changePage($(document.location.href = "claimForm.html"), { transition: "slide"});
-                $.mobile.changePage('claimForm.html', { transition: "slide"});
+                $.mobile.changePage('claimForm.html', {
+                    transition: "slide",
+                    showLoadMsg: true
+                });
             });
             $('menu').mmenu();
         });

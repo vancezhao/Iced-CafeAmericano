@@ -35,6 +35,12 @@ $(function () {
 //        $('.to-remove').remove();
 //    });
 
+    $(document).on("pagebeforechange", function (event) {
+        console.log('page before change');
+        $.mobile.loading('show');
+    });
+
+
 // attach fastClick button
     FastClick.attach(document.body);
 // check cookie
@@ -135,50 +141,6 @@ $(function () {
                 data: imageURI });
         });
 
-        $('#imgUpload').click(function () {
-            console.log('get data on addingDialog:  ' + imageURI + ' when click upload');
-
-            var options = new FileUploadOptions();
-            options.fileKey = "file";
-            options.fileName = imageURI.substr(imageURI.lastIndexOf('/') + 1);
-            options.mimeType = "image/jpeg";
-            console.log('Start to upload files');
-            console.log('imageURI is: ' + imageURI);
-
-            // for test use only
-            console.log('start uploading picture');
-            var params = new Object();
-            params.value1 = "test";
-            params.value2 = "param";
-            options.params = params;
-            var ft = new FileTransfer();
-
-            ft.upload(imageURI, encodeURI($.claimImageUploadAPI), function win(r) {
-                console.log("Code = " + r.responseCode);
-                console.log("Response = " + r.response);
-                console.log("Sent = " + r.bytesSent);
-
-                window.plugins.toast.showShortTop('You\'ve successfully submitted the ticket.', function () {
-                }, function (error) {
-                    console.error('error' + error)
-                });
-
-                $.mobile.navigate("main.html", {
-                    reloadPage: true,
-                    data: JSON.stringify($.mobile.credentials),
-                    changeHash: false,
-                    allowSamePageTransition: true,
-                    transition: 'none'
-                });
-
-            }, function fail(error) {
-                console.error("An error has occurred: Code = " + error.code);
-                console.error("upload error source " + error.source);
-                console.error("upload error target " + error.target);
-            }, options);
-
-        });
-
     });
 
     $(document).on('pagebeforeshow', "#takePicture", function (event, data) {
@@ -266,12 +228,20 @@ $(function () {
                     '<label for="textarea">Comments</label>' +
                     '<textarea name="textarea" class="claimPictureComment"></textarea>' +
                     '</div></div>');
-
-                $('#claimNoticeImageLoader').hide();
+//                $('#claimNoticeImageLoader').hide();
+                $.mobile.loading('hide');
             },
             error: function onError(err) {
                 console.error('error ' + err);
-            }
+            },
+            beforeSend: function beforeSend() {
+                $.mobile.loading('show');
+                console.log('before send');
+            },
+            complete: function onComplete() {
+                $.mobile.loading('hide');
+            },
+            async: false
         });
 
         $('#menu').mmenu();
