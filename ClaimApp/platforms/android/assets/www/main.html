@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Loading main js -->
+    <script src="js/main_.js"></script>
+
+</head>
+<body>
+<div data-role="page" id="home" data-theme="a">
+
+    <div data-role='header' class='ui-icon-home'>
+        <h1>理赔产品首页</h1>
+    </div>
+
+    <div data-role='content'>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About us</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
+
+        <fieldset data-role='fieldcontain'>
+            <label for='category'>选择产品类型</label>
+            <select name='category' id='category' data-native-menu='false'>
+                <option value=''></option>
+                <option value='mon'>车险</option>
+                <option value='tue'>家产险</option>
+                <option value='wed'>健康意外险</option>
+            </select>
+        </fieldset>
+
+        <fieldset data-role='fieldcontain'>
+            <label for='product'>产品名</label>
+            <select name='product' id='product' data-native-menu='false'>
+                <option value=''></option>
+            </select>
+        </fieldset>
+        <div style='margin-top: 30px;'>
+            <input id='gotoClaim' type='button' value='Submit'/>
+        </div>
+        <div id='resultLog'></div>
+        <div id="index"></div>
+
+        <button type="button" class="btn btn-default btn-lg" id="mainToTakePciture">
+            <span class="fui-photo"></span> SnapIt!
+        </button>
+    </div>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="#">Home</a>
+            </li>
+            <li><a href="#about">About us</a>
+                <ul>
+                    <li><a href="#about/history">History</a>
+                    </li>
+                    <li><a href="#about/team">The team</a>
+                        <ul>
+                            <li><a href="#about/team/management">Management</a>
+                            </li>
+                            <li><a href="#about/team/sales">Sales</a>
+                            </li>
+                            <li><a href="#about/team/development">Development</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#about/address">Our address</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <script>
+        $(function () {
+            $('#menu').mmenu();
+
+            $('#mainToTakePciture').click(function () {
+                console.log('mainToTakePciture click!');
+                $.mobile.changePage('takePicture.html', {});
+            });
+        });
+    </script>
+
+</div>
+
+
+</body>
+</html>

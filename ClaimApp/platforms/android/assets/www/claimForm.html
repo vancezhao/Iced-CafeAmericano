@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!--<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.3.min.css" />-->
+    <!--<link rel="stylesheet" href="css/themes/default/jquery.mobile.theme-1.4.3.min.css" />-->
+
+    <!--<script src="js/jquery-1.11.1.min.js"></script>-->
+    <!--<script src="js/jquery.mobile-1.4.3.min.js"></script>-->
+
+    <!--<script>-->
+    <!--$(function () {-->
+    <!--$.ajax({-->
+    <!--type: "GET",-->
+    <!--url: "api/claim/form",-->
+    <!--cache: false,-->
+    <!--dataType: "text",-->
+    <!--success: onSuccess-->
+    <!--});-->
+
+    <!--function onSuccess(data) {-->
+    <!--$('#claimForm').html(data);-->
+    <!--$('#claimForm').trigger('create');-->
+    <!--}-->
+    <!--});-->
+    <!--</script>-->
+</head>
+
+<body>
+<div data-role="page" id="claimPage" data-position="fixed">
+    <div data-role="header" class="header" data-position="inline">
+        <!--<a id="backBtn" data-role="button" data-icon="back">Back</a>-->
+        <a id="menuBtn" href="#menu" data-ajax="false"></a>
+        <nav id="menu" class="menuNav">
+            <ul>
+                <ul data-role="listview" data-inset="true" data-filter="false">
+                    <li><a href="productList.html" class="menuLink">
+                        <img src="flatUI/images/icons/svg/clipboard.svg" alt="Clipboard" class="menuImgIcon">New
+                        Claim</a>
+                    </li>
+                    <li><a href="#"><img src="flatUI/images/icons/svg/book.svg" class="ui-li-icon menuImgIcon">Claim
+                        Process
+                        Result
+                        <span class="ui-li-count menuSpan">2</span></a></li>
+                    <li><a href="#"><img src="flatUI/images/icons/svg/calendar.svg" class="ui-li-icon menuImgIcon">History
+                        Journal</a></li>
+                    <li><a href="#"><img src="flatUI/images/icons/svg/map.svg" class="ui-li-icon menuImgIcon">Insurance
+                        News
+                        <span class="ui-li-count menuSpan">8</span></a>
+                    </li>
+
+                    <li><a href="#"><img src="flatUI/images/icons/svg/paper-bag.svg" class="ui-li-icon menuImgIcon">My
+                        Account</a></li>
+                    <li><a href="#"><img src="flatUI/images/icons/svg/retina.svg"
+                                         class="ui-li-icon menuImgIcon">Feedback</a></li>
+                    <li><a href="#"><img src="flatUI/images/icons/svg/paper-bag.svg" class="ui-li-icon menuImgIcon">My
+                        Account</a></li>
+                    <li><a href="takePicture.html"><img src="flatUI/images/icons/svg/chat.svg"
+                                                        class="ui-li-icon menuImgIcon">Take Picture</a></li>
+                </ul>
+            </ul>
+        </nav>
+        <h1>Claim Information</h1>
+    </div>
+
+    <div data-role='content' id="claimFormContent">
+
+        <form method="post" data-iscroll>
+            <div data-iscroll>
+                <div id="claimForm" data-iscroll></div>
+                <div style='margin-top: 30px;'>
+                    <div id='errorInfo'></div>
+                    <input id='gotoClaim' type='button' value='Submit' onclick="onSubmit()"/>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+    </div>
+</div>
+<script>
+    function onSubmit() {
+        //$('#errorInfo').html("<a href=\"javascript:onFocus('username')\">Error on username with a long long long long long long long long long long long message</a>");
+        $('#errorInfo').html(JSON.stringify($('#claimForm').serializeObject()));
+        var form = $('#claimForm');
+        /*	$.ajax({
+         type: "POST",
+         url: "api/claim/submitClaimInfo",
+         data: JSON.stringify(form.serializeArray()),
+         cache: false,
+         dataType: "json",
+         success: function(data) {
+         //$('#errorInfo').html(data);
+         }
+         });
+         */
+    }
+    function onFocus(fieldId) {
+        var elm = $('#' + fieldId);
+        elm.focus();
+    }
+
+    $("#claimForm").submit(function (event) {
+        // Stop form from submitting normally
+        event.preventDefault();
+        $.post("api/claim/submitClaimInfo", function (data) {
+            alert("Data Loaded: " + data);
+        });
+    });
+
+</script>
+</body>
+</html>

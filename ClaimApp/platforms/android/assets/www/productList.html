@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!--<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.3.min.css" />-->
+    <!--<link rel="stylesheet" href="css/themes/default/jquery.mobile.theme-1.4.3.min.css" />-->
+
+    <!--<script src="js/jquery-1.11.1.min.js"></script>-->
+    <!--<script src="js/jquery.mobile-1.4.3.min.js"></script>-->
+
+</head>
+<body>
+<div data-role="page" id="productList" data-theme="a">
+    <div data-role="header" class="header" data-position="inline" data-position="fixed">
+        <!--<a id="backBtn" data-role="button" data-icon="back">Back</a>-->
+        <h1>Product List</h1>
+        <a id="menuBtn" href="#menu" data-ajax="false"></a>
+        <nav id="menu" class="menuNav">
+            <ul>
+                <ul data-role="listview" data-inset="true" data-filter="false">
+                    <li><a href="productList.html" class="menuLink">
+                        <img src="flatUI/images/icons/svg/clipboard.svg" alt="Clipboard" class="menuImgIcon">New
+                        Claim</a>
+                    </li>
+                    <li><a href="#"><img src="flatUI/images/icons/svg/book.svg" class="ui-li-icon menuImgIcon">Claim
+                        Process
+                        Result
+                        <span class="ui-li-count menuSpan">2</span></a></li>
+                    <li><a href="#"><img src="flatUI/images/icons/svg/calendar.svg" class="ui-li-icon menuImgIcon">History
+                        Journal</a></li>
+                    <li><a href="#"><img src="flatUI/images/icons/svg/map.svg" class="ui-li-icon menuImgIcon">Insurance
+                        News
+                        <span class="ui-li-count menuSpan">8</span></a>
+                    </li>
+
+                    <li><a href="#"><img src="flatUI/images/icons/svg/paper-bag.svg" class="ui-li-icon menuImgIcon">My
+                        Account</a></li>
+                    <li><a href="#"><img src="flatUI/images/icons/svg/retina.svg"
+                                         class="ui-li-icon menuImgIcon">Feedback</a></li>
+                    <li><a href="#"><img src="flatUI/images/icons/svg/paper-bag.svg" class="ui-li-icon menuImgIcon">My
+                        Account</a></li>
+                    <li><a href="takePicture.html"><img src="flatUI/images/icons/svg/chat.svg"
+                                                        class="ui-li-icon menuImgIcon">Take Picture</a></li>
+                </ul>
+            </ul>
+        </nav>
+    </div>
+
+    <div data-role='content'>
+        <ul data-role="listview" data-inset="true" data-filter="true"
+            data-filter-placeholder="Filter Insurance Product...">
+            <li data-role="list-divider">California Insurance Company</li>
+            <li><a href="#" id="californiaProperty">Property All Risks Insurance</a></li>
+            <li><a href="#">Home Building Fire Insurance</a></li>
+            <li><a href="#">Motor Vehicle Insurance</a></li>
+
+            <li data-role="list-divider">National Union Life and Limb Insurance Company</li>
+            <li><a href="#">Public Liability Insurance</a></li>
+            <li><a href="#">Marine Catgo Insurance</a></li>
+        </ul>
+    </div>
+    <script>
+        $(function () {
+//            $('#backBtn').click(function () {
+//                console.log('backBtn click!');
+//                $.mobile.changePage($(document.location.href = "main.html"), { transition: "slide"});
+//            });
+
+            $('#californiaProperty').click(function () {
+                console.log('californiaProperty click!');
+//                $.mobile.changePage($(document.location.href = "claimForm.html"), { transition: "slide"});
+                $.mobile.changePage('claimForm.html', {
+                    transition: "slide",
+                    showLoadMsg: true
+                });
+            });
+            $('menu').mmenu();
+        });
+    </script>
+</div>
+</body>
+</html>

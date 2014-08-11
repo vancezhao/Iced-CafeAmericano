@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f6ddd48-b968-4ad6-a157-11cbb7234428" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClaimApp/www/isScroll/iscroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClaimApp/www/isScroll/jquery.mobile.iscrollview.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClaimApp/www/isScroll/layer_xy_hack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClaimApp/www/isScroll/pull-example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/ClaimApp.xcodeproj/project.xcworkspace/xcuserdata/vancezhao.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ClaimApp/platforms/ios/ClaimApp.xcodeproj/project.xcworkspace/xcuserdata/vancezhao.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/js/ClaimImageLoader.js" afterPath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/js/ClaimImageLoader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/www/js/ClaimImageLoader.js" afterPath="$PROJECT_DIR$/ClaimApp/www/js/ClaimImageLoader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/js/app.js" afterPath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/www/js/app.js" afterPath="$PROJECT_DIR$/ClaimApp/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/claimForm.html" afterPath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/claimForm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/www/claimForm.html" afterPath="$PROJECT_DIR$/ClaimApp/www/claimForm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/index.html" afterPath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/www/index.html" afterPath="$PROJECT_DIR$/ClaimApp/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/menu.html" afterPath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/www/menu.html" afterPath="$PROJECT_DIR$/ClaimApp/www/menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/js/mobile-config.js" afterPath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/js/mobile-config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/www/js/mobile-config.js" afterPath="$PROJECT_DIR$/ClaimApp/www/js/mobile-config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="4f6ddd48-b968-4ad6-a157-11cbb7234428" name="Default" comment="" />
     <ignored path="Iced-CafeAmericano.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -85,8 +66,8 @@
       <file leaf-file-name="ClaimImageLoader.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ClaimApp/www/js/ClaimImageLoader.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45182723" vertical-offset="627" max-vertical-offset="1530">
-              <caret line="71" column="36" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.43521595" vertical-offset="627" max-vertical-offset="1530">
+              <caret line="70" column="10" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
               <folding>
                 <element signature="e#0#43#0" expanded="false" />
               </folding>
@@ -799,8 +780,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ClaimApp/www/js/ClaimImageLoader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45182723" vertical-offset="627" max-vertical-offset="1530">
-          <caret line="71" column="36" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.43521595" vertical-offset="627" max-vertical-offset="1530">
+          <caret line="70" column="10" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
           <folding>
             <element signature="e#0#43#0" expanded="false" />
           </folding>

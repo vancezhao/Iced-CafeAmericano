@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div data-role="page">
+    <script type="text/javascript">
+        $(function () {
+            $('#menu').mmenu(
+                    {
+                        onClick: {
+                            preventDefault: true
+                        }
+                    }, {
+                        offCanvas: {
+                            pageSelector: 'div[data-role="page"]:first'
+                        }
+                    },
+                    {
+                        counters: true
+                    });
+
+            $('#menu a').on(
+                    'click',
+                    function () {
+                        var _t = this;
+                        $('#menu').one(
+                                'closed.mm',
+                                function () {
+                                    $.mobile.changePage(_t.href, {
+                                        transition: 'slide'
+                                    });
+                                }
+                        );
+                    }
+            );
+        });
+
+        $(document).on(
+                'pageshow',
+                function (e, ui) {
+                    $('#menu').trigger('setPage', [ $(e.target) ]);
+                    $('#menu a').each(
+                            function () {
+                                if ($.mobile.path.parseUrl(this.href).href == window.location.href) {
+                                    $(this).trigger('setSelected.mm');
+                                }
+                            }
+                    );
+                }
+        );
+    </script>
+
+    <div data-role="header" class="header" data-position="inline" data-position="fixed">
+        <a id="menuBtn" href="#menu" data-ajax="false"></a>
+        <nav id="menu" class="menuNav">
+            <ul>
+                <ul data-role="listview" data-inset="true" data-filter="false">
+                    <li><a href="productList.html" class="menuLink">
+                        <img src="flatUI/images/icons/svg/clipboard.svg" alt="Clipboard" class="menuImgIcon">New
+                        Claim</a>
+                    </li>
+                    <li><a href="#"><img src="flatUI/images/icons/svg/book.svg" class="ui-li-icon menuImgIcon">Claim
+                        Process
+                        Result
+                        <span class="ui-li-count menuSpan">2</span></a></li>
+                    <li><a href="#"><img src="flatUI/images/icons/svg/calendar.svg" class="ui-li-icon menuImgIcon">History
+                        Journal</a></li>
+                    <li><a href="#"><img src="flatUI/images/icons/svg/map.svg" class="ui-li-icon menuImgIcon">Insurance
+                        News
+                        <span class="ui-li-count menuSpan">8</span></a>
+                    </li>
+
+                    <li><a href="#"><img src="flatUI/images/icons/svg/paper-bag.svg" class="ui-li-icon menuImgIcon">My
+                        Account</a></li>
+                    <li><a href="#"><img src="flatUI/images/icons/svg/retina.svg"
+                                         class="ui-li-icon menuImgIcon">Feedback</a></li>
+                    <li><a href="#"><img src="flatUI/images/icons/svg/paper-bag.svg" class="ui-li-icon menuImgIcon">My
+                        Account</a></li>
+                    <li><a href="#"><img src="flatUI/images/icons/svg/chat.svg"
+                                                        class="ui-li-icon menuImgIcon">Sample</a></li>
+                </ul>
+            </ul>
+        </nav>
+        <span>Claim App</span>
+    </div>
+    <div class="content" data-role="content">
+
+    </div>
+    <div data-role="footer"></div>
+</div>
+</body>
+</html>
