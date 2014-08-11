@@ -27,10 +27,12 @@
 </head>
 
 <body>
-<div data-role="page" id="claimPage" data-position="fixed">
+<div data-role="page" id="claimPage" data-position="fixed" data-theme="a">
     <div data-role="header" class="header" data-position="inline">
+
         <!--<a id="backBtn" data-role="button" data-icon="back">Back</a>-->
         <a id="menuBtn" href="#menu" data-ajax="false"></a>
+
         <nav id="menu" class="menuNav">
             <ul>
                 <ul data-role="listview" data-inset="true" data-filter="false">
@@ -60,21 +62,18 @@
                 </ul>
             </ul>
         </nav>
+
         <h1>Claim Information</h1>
     </div>
 
-    <div data-role='content' id="claimFormContent">
-
-        <form method="post" data-iscroll>
-            <div data-iscroll>
-                <div id="claimForm" data-iscroll></div>
-                <div style='margin-top: 30px;'>
-                    <div id='errorInfo'></div>
-                    <input id='gotoClaim' type='button' value='Submit' onclick="onSubmit()"/>
-                </div>
+    <div data-role='content' id="claimFormContent" data-iscroll>
+        <form method="post">
+            <div id="claimForm"></div>
+            <div style='margin-top: 30px;' data-iscroll>
+                <div id='errorInfo'></div>
+                <input id='gotoClaim' type='button' value='Submit' onclick="onSubmit()"/>
             </div>
         </form>
-
     </div>
 
     <div data-role="footer" data-position="fixed">

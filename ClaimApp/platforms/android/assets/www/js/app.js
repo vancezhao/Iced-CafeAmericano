@@ -222,7 +222,7 @@ $(function () {
                 $('#claimForm').html(data);
                 $('#claimForm').trigger('create');
 
-                $('#claimForm').append('<div class="row" id="claimNoticeImageLoader" data-iscroll>' +
+                $('#claimForm').append('<div class="row" id="claimNoticeImageLoader">' +
                     '<div class="col-xs-12" data-iscroll>' +
                     '<img id="imageDisplay" class="claimNoticeImage img-rounded img-responsive"/>' +
                     '</div>' +
@@ -231,7 +231,7 @@ $(function () {
                     '<textarea name="textarea" class="claimPictureComment"></textarea>' +
                     '</div></div>');
 
-                $('#claimForm').append('<div class="row" data-iscroll>' +
+                $('#claimForm').append('<div class="row">' +
                     '<div class="col-xs-6">' +
                     '<a id="takePicBtn" class="ui-icon-camera ui-btn-icon-left claimNoticeImageBtn">Camera</a>' +
                     '</div>' +

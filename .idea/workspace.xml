@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f6ddd48-b968-4ad6-a157-11cbb7234428" name="Default" comment="" />
+    <list default="true" id="4f6ddd48-b968-4ad6-a157-11cbb7234428" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/ClaimApp-debug-unaligned.apk" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/ClaimApp-debug-unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/ClaimApp-debug.apk" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/ClaimApp-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/ClaimApp.ap_" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/ClaimApp.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/ClaimApp.xcodeproj/project.xcworkspace/xcuserdata/vancezhao.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ClaimApp/platforms/ios/ClaimApp.xcodeproj/project.xcworkspace/xcuserdata/vancezhao.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/js/ClaimImageLoader.js" afterPath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/js/ClaimImageLoader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-gen/R.java.d" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-gen/R.java.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/assets/www/js/app.js" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/assets/www/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/js/app.js" afterPath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/www/js/app.js" afterPath="$PROJECT_DIR$/ClaimApp/www/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/CordovaLib/ant-build/build.prop" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/CordovaLib/ant-build/build.prop" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/build.prop" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/build.prop" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/assets/www/claimForm.html" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/assets/www/claimForm.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/claimForm.html" afterPath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/claimForm.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/www/claimForm.html" afterPath="$PROJECT_DIR$/ClaimApp/www/claimForm.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/assets/www/index.html" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/assets/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/index.html" afterPath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/www/index.html" afterPath="$PROJECT_DIR$/ClaimApp/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Iced-CafeAmericano.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,8 +45,18 @@
       <file leaf-file-name="takePicture.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ClaimApp/www/takePicture.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.625" vertical-offset="0" max-vertical-offset="1095">
-              <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+            <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1095">
+              <caret line="15" column="112" selection-start-line="15" selection-start-column="112" selection-end-line="15" selection-end-column="112" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ClaimApp/www/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="1335">
+              <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -37,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/ClaimApp/www/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="2877" max-vertical-offset="4170">
-              <caret line="226" column="88" selection-start-line="226" selection-start-column="88" selection-end-line="226" selection-end-column="88" />
+              <caret line="219" column="41" selection-start-line="219" selection-start-column="41" selection-end-line="219" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -63,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClaimImageLoader.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ClaimImageLoader.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ClaimApp/www/js/ClaimImageLoader.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43521595" vertical-offset="627" max-vertical-offset="1530">
+            <state vertical-scroll-proportion="0.0" vertical-offset="627" max-vertical-offset="1530">
               <caret line="70" column="10" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
               <folding>
                 <element signature="e#0#43#0" expanded="false" />
@@ -85,13 +114,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="claimForm.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="claimForm.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ClaimApp/www/claimForm.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.0" vertical-offset="651" max-vertical-offset="1800">
-              <caret line="69" column="49" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.407281" vertical-offset="707" max-vertical-offset="1785">
+              <caret line="71" column="55" selection-start-line="71" selection-start-column="55" selection-end-line="71" selection-end-column="55" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,13 +166,13 @@
         <option value="$PROJECT_DIR$/ClaimApp/www/productList.html" />
         <option value="$PROJECT_DIR$/ClaimApp/www/config/config.json" />
         <option value="$PROJECT_DIR$/ClaimApp/www/js/mobile-config.js" />
-        <option value="$PROJECT_DIR$/ClaimApp/www/index.html" />
         <option value="$PROJECT_DIR$/ClaimApp/www/iscorllSample.html" />
         <option value="$PROJECT_DIR$/ClaimApp/www/css/index.css" />
         <option value="$PROJECT_DIR$/ClaimApp/www/menu.html" />
-        <option value="$PROJECT_DIR$/ClaimApp/www/claimForm.html" />
-        <option value="$PROJECT_DIR$/ClaimApp/www/js/app.js" />
         <option value="$PROJECT_DIR$/ClaimApp/www/js/ClaimImageLoader.js" />
+        <option value="$PROJECT_DIR$/ClaimApp/www/index.html" />
+        <option value="$PROJECT_DIR$/ClaimApp/www/js/app.js" />
+        <option value="$PROJECT_DIR$/ClaimApp/www/claimForm.html" />
       </list>
     </option>
   </component>
@@ -211,28 +240,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Iced-CafeAmericano" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Iced-CafeAmericano" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClaimApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -704,10 +711,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ClaimApp/www/index.html">
+    <entry file="file://$PROJECT_DIR$/ClaimApp/www/isScroll/iscroll.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.875" vertical-offset="456" max-vertical-offset="1335">
-          <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="16815">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClaimApp/www/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45392492" vertical-offset="621" max-vertical-offset="1500">
+          <caret line="68" column="62" selection-start-line="68" selection-start-column="62" selection-end-line="68" selection-end-column="62" />
           <folding />
         </state>
       </provider>
@@ -720,11 +735,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ClaimApp/www/isScroll/iscroll.js">
+    <entry file="file://$PROJECT_DIR$/ClaimApp/www/js/ClaimImageLoader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="16815">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="627" max-vertical-offset="1530">
+          <caret line="70" column="10" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -746,44 +763,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ClaimApp/www/takePicture.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.625" vertical-offset="0" max-vertical-offset="1095">
-          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1095">
+          <caret line="15" column="112" selection-start-line="15" selection-start-column="112" selection-end-line="15" selection-end-column="112" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ClaimApp/www/menu.html">
+    <entry file="file://$PROJECT_DIR$/ClaimApp/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45392492" vertical-offset="621" max-vertical-offset="1500">
-          <caret line="68" column="62" selection-start-line="68" selection-start-column="62" selection-end-line="68" selection-end-column="62" />
+        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="1335">
+          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ClaimApp/www/claimForm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.0" vertical-offset="651" max-vertical-offset="1800">
-          <caret line="69" column="49" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="49" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ClaimApp/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2877" max-vertical-offset="4170">
-          <caret line="226" column="88" selection-start-line="226" selection-start-column="88" selection-end-line="226" selection-end-column="88" />
+          <caret line="219" column="41" selection-start-line="219" selection-start-column="41" selection-end-line="219" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ClaimApp/www/js/ClaimImageLoader.js">
+    <entry file="file://$PROJECT_DIR$/ClaimApp/www/claimForm.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43521595" vertical-offset="627" max-vertical-offset="1530">
-          <caret line="70" column="10" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.407281" vertical-offset="707" max-vertical-offset="1785">
+          <caret line="71" column="55" selection-start-line="71" selection-start-column="55" selection-end-line="71" selection-end-column="55" />
           <folding>
-            <element signature="e#0#43#0" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

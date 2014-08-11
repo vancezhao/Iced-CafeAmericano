@@ -74,7 +74,7 @@ var ClaimImageLoader = ({
 //               $('#takePicImage').attr('src', imageURI);
 //                ClaimImageLoader.imageUpLoader(imageURI);
                 $('#imageDisplay').attr('src', imageURI);
-                
+
             }, function (error) {
                 console.error('capture camera error message: ' + error);
             }, options);
