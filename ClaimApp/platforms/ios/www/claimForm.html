@@ -27,7 +27,7 @@
 </head>
 
 <body>
-<div data-role="page" id="claimPage">
+<div data-role="page" id="claimPage" data-position="fixed">
     <div data-role="header" class="header" data-position="inline">
         <!--<a id="backBtn" data-role="button" data-icon="back">Back</a>-->
         <a id="menuBtn" href="#menu" data-ajax="false"></a>
@@ -63,25 +63,21 @@
         <h1>Claim Information</h1>
     </div>
 
-    <div data-role='content'>
+    <div data-role='content' id="claimFormContent">
 
-        <form id="claimForm" method="post">
-
+        <form method="post" data-iscroll>
+            <div data-iscroll>
+                <div id="claimForm" data-iscroll></div>
+                <div style='margin-top: 30px;'>
+                    <div id='errorInfo'></div>
+                    <input id='gotoClaim' type='button' value='Submit' onclick="onSubmit()"/>
+                </div>
+            </div>
         </form>
 
-        <!-- Image Loader Component-->
-        <div class="row">
-            <!--<img id="imageUpload" src=""/>-->
-            <!--<a id="upLoadDivBtn" class="fancybox" href="#addingDialog" style="display: none"-->
-            <!--title="enter your login details here">upLoadImage</a>-->
-            <div class="col-xs-6">
-                <a id="takePicBtn" class="ui-icon-camera ui-btn-icon-left claimNoticeImageBtn">Camera</a>
-            </div>
-            <div class="col-xs-6">
-                <a id="openPicFolder" class="ui-icon-bullets ui-btn-icon-left claimNoticeImageBtn">Media File</a>
-            </div>
+    </div>
 
-        </div>
+    <div data-role="footer" data-position="fixed">
     </div>
 </div>
 <script>
@@ -105,15 +101,15 @@
         var elm = $('#' + fieldId);
         elm.focus();
     }
-    /*
-     $("#claimForm").submit(function(event) {
-     // Stop form from submitting normally
-     event.preventDefault();
-     $.post( "api/claim/submitClaimInfo", function(data) {
-     alert( "Data Loaded: " + data );
-     });
-     });
-     */
+
+    $("#claimForm").submit(function (event) {
+        // Stop form from submitting normally
+        event.preventDefault();
+        $.post("api/claim/submitClaimInfo", function (data) {
+            alert("Data Loaded: " + data);
+        });
+    });
+
 </script>
 </body>
 </html>

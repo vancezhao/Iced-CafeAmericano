@@ -42,7 +42,8 @@ $(function () {
 
 
 // attach fastClick button
-    FastClick.attach(document.body);
+//    FastClick.attach(document.body);
+
 // check cookie
     var localCookie = $.cookie('claimCookie');
 
@@ -58,7 +59,6 @@ $(function () {
     $('#loginBtn').on("click", function (event) {
         // Prevent the usual navigation behavior
         event.preventDefault();
-
         claimLogin();
     });
 
@@ -217,19 +217,29 @@ $(function () {
             cache: false,
             dataType: "text",
             success: function onSuccess(data) {
+                $.mobile.loading('hide');
+
                 $('#claimForm').html(data);
                 $('#claimForm').trigger('create');
 
-                $('#claimForm').append('<div class="row" id="claimNoticeImageLoader">' +
-                    '<div class="col-xs-12">' +
+                $('#claimForm').append('<div class="row" id="claimNoticeImageLoader" data-iscroll>' +
+                    '<div class="col-xs-12" data-iscroll>' +
                     '<img id="imageDisplay" class="claimNoticeImage img-rounded img-responsive"/>' +
                     '</div>' +
-                    '<div class="col-xs-12">' +
+                    '<div class="col-xs-12" data-iscroll>' +
                     '<label for="textarea">Comments</label>' +
                     '<textarea name="textarea" class="claimPictureComment"></textarea>' +
                     '</div></div>');
-//                $('#claimNoticeImageLoader').hide();
-                $.mobile.loading('hide');
+
+                $('#claimForm').append('<div class="row" data-iscroll>' +
+                    '<div class="col-xs-6">' +
+                    '<a id="takePicBtn" class="ui-icon-camera ui-btn-icon-left claimNoticeImageBtn">Camera</a>' +
+                    '</div>' +
+                    '<div class="col-xs-6">' +
+                    '<a id="openPicFolder" class="ui-icon-bullets ui-btn-icon-left claimNoticeImageBtn">Media File</a>' +
+                    '</div>' +
+                    '</div>');
+
             },
             error: function onError(err) {
                 console.error('error ' + err);

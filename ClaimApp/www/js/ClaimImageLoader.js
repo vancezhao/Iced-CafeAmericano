@@ -73,8 +73,8 @@ var ClaimImageLoader = ({
             function (imageURI) {
 //               $('#takePicImage').attr('src', imageURI);
 //                ClaimImageLoader.imageUpLoader(imageURI);
-
                 $('#imageDisplay').attr('src', imageURI);
+
             }, function (error) {
                 console.error('capture camera error message: ' + error);
             }, options);
@@ -89,7 +89,7 @@ var ClaimImageLoader = ({
             function (message) {
                 console.error('upload picture failed: ' + message);
             }, {
-                quality: 50,
+                quality: 30,
                 destinationType: navigator.camera.DestinationType.FILE_URI,
                 sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY
             }
