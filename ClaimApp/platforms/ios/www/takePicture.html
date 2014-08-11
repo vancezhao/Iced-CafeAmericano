@@ -7,6 +7,40 @@
 </head>
 <body>
 <div id="takePicture" data-role="page">
+    <div data-role="header" class="header" data-position="inline" data-position="fixed">>
+        <a id="menuBtn" href="#menu" data-ajax="false"></a>
+        <nav id="menu" class="menuNav">
+            <ul>
+                <ul data-role="listview" data-inset="true" data-filter="false">
+                    <li><a href="#" class="menuLink">
+                        <img src="flatUI/images/icons/svg/clipboard.svg" alt="Clipboard" class="menuImgIcon">New
+                        Claim</a>
+                    </li>
+                    <li><a href="#"><img src="flatUI/images/icons/svg/book.svg" class="ui-li-icon menuImgIcon">Claim
+                        Process
+                        Result
+                        <span class="ui-li-count menuSpan">2</span></a></li>
+                    <li><a href="#"><img src="flatUI/images/icons/svg/calendar.svg" class="ui-li-icon menuImgIcon">History
+                        Journal</a></li>
+                    <li><a href="#"><img src="flatUI/images/icons/svg/map.svg" class="ui-li-icon menuImgIcon">Insurance
+                        News
+                        <span class="ui-li-count menuSpan">8</span></a>
+                    </li>
+
+                    <li><a href="#"><img src="flatUI/images/icons/svg/paper-bag.svg" class="ui-li-icon menuImgIcon">My
+                        Account</a></li>
+                    <li><a href="#"><img src="flatUI/images/icons/svg/retina.svg"
+                                         class="ui-li-icon menuImgIcon">Feedback</a></li>
+                    <li><a href="#"><img src="flatUI/images/icons/svg/paper-bag.svg" class="ui-li-icon menuImgIcon">My
+                        Account</a></li>
+                    <li><a href="takePicture.html"><img src="flatUI/images/icons/svg/chat.svg"
+                                                        class="ui-li-icon menuImgIcon">Take Picture</a></li>
+                </ul>
+            </ul>
+        </nav>
+        <span>Claim App</span>
+    </div>
+
     <div data-role="content">
         <img id="imageUpload" src=""/>
 
@@ -23,6 +57,11 @@
             <span class="fui-photo"></span>Upload Picture
         </button>
     </div>
+    <script>
+        $(function () {
+            $('#menu').mmenu()
+        });
+    </script>
 </div>
 </body>
 </html>

@@ -3,9 +3,12 @@
  */
 $(document).bind("mobileinit", function () {
     $.getJSON('config/config.json', function (data) {
-        $.claimServiceURL = data.claimServiceURL;
-        $.claimLoginAPI = $.claimServiceURL+data.claimLoginAPI;
-        $.claimProductAPI =$.claimServiceURL+ data.claimProductAPI;
-        $.claimImageUploadAPI = $.claimServiceURL+data.claimImageUploadAPI;
+        $.serviceURL = data.ServiceURL;
+        $.claimServiceURL = $.serviceURL+data.ClaimServiceURL;
+        $.userServiceURL = $.serviceURL+data.UserServiceURL;
+        $.claimLoginAPI = $.userServiceURL + data.UserLoginAPI;
+        $.claimProductAPI = $.claimServiceURL + data.ClaimProductAPI;
+        $.claimImageUploadAPI = $.claimServiceURL + data.ClaimImageUploadAPI;
+        $.claimGetFormAPI = $.claimServiceURL + data.ClaimFormAPI;
     })
 });

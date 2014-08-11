@@ -3,14 +3,41 @@
  */
 
 $(function () {
-
     app.initialize();
 
     //initial menu
+//    $(document).on('pagebeforeshow', function (event, ui) {
+//        // avoid duplicating the header on the first page load
+//        if (ui.prevPage.length == 0) return;
+//
+//        // remove the jQuery Mobile-generated header
+//        $('.ui-header').addClass('to-remove-now');
+//        $('#header').removeClass('to-remove-now');
+//        $('.to-remove-now').remove();
+//
+//        // grab the code from the current header and footer
+//        var header = $('#header')[0].outerHTML;
+//        var footer = $('#footer')[0].outerHTML;
+//
+//
+//        // mark the existing header and footer for deletion
+//        $('#header').addClass('to-remove');
+//        $('#footer').addClass('to-remove');
+//
+//        console.log('header is: ' + header);
+//        // prepend the header and append the footer to the generated HTML
+//        event.currentTarget.innerHTML = header + event.currentTarget.innerHTML + footer
+//    });
+//
+//
+//// remove header from previous page
+//    $(document).on('pagehide', function (event, ui) {
+//        $('.to-remove').remove();
+//    });
 
-    // attach fastClick button
+// attach fastClick button
     FastClick.attach(document.body);
-    // check cookie
+// check cookie
     var localCookie = $.cookie('claimCookie');
 
     if (typeof localCookie == "undefined") {
@@ -19,7 +46,7 @@ $(function () {
         claimLogin();
     }
     console.log('localCookie is: ' + localCookie);
-    // handle login
+// handle login
     $('#loginBtn').on("click", function (event) {
         // Prevent the usual navigation behavior
         event.preventDefault();
@@ -161,6 +188,7 @@ $(function () {
 //        var parameter;
 //        parameter = parameters.replace("parameter=", "");
 //        console.log("parameter : " + parameter);
+
         $('#imageUpload').attr('src', imageURI);
 
         function imageUploader(imageURI) {
@@ -174,9 +202,9 @@ $(function () {
         $('#takePicBtn').click(
             function claimTakePicture() {
                 var options = {
-                    quality: 45,
-                    //                    targetWidth: 1000,
-                    //                    targetHeight: 1000,
+                    quality: 50,
+                    targetWidth: 1000,
+                    targetHeight: 1000,
                     destinationType: Camera.DestinationType.FILE_URI,
                     encodingType: Camera.EncodingType.JPEG,
                     sourceType: Camera.PictureSourceType.CAMERA
@@ -214,6 +242,49 @@ $(function () {
         if (ob.toPage && (typeof ob.toPage === "string") && ob.toPage.indexOf('index.html') >= 0) {
             console.log("blocking the back");
             e.preventDefault();
+            history.go(1);
         }
     });
-});
+
+    $(document).on('pagebeforeshow', '#claimPage', function () {
+        $.ajax({
+            type: "GET",
+            url: $.claimGetFormAPI,
+            cache: false,
+            dataType: "text",
+            success: function onSuccess(data) {
+                $('#claimForm').html(data);
+                $('#claimForm').trigger('create');
+
+                $('#claimForm').append('<div class="row" id="claimNoticeImageLoader">' +
+                    '<div class="col-xs-5">' +
+                    '<img id="imageDisplay" class="claimNoticeImage img-rounded img-responsive"/>' +
+                    '</div>' +
+                    '<div class="col-xs-5">' +
+                    '<label for="textarea">Comments</label>' +
+                    '<textarea name="textarea" class="claimPictureComment"></textarea>' +
+                    '</div></div>');
+
+                $('#claimNoticeImageLoader').hide();
+            },
+            error: function onError(err) {
+                console.error('error ' + err);
+            }
+        });
+
+        $('#menu').mmenu();
+
+        $('#takePicBtn').click(function () {
+            ClaimImageLoader.takePict();
+            $('#claimNoticeImageLoader').show();
+        });
+
+        $('#openPicFolder').click(function () {
+            ClaimImageLoader.getPictFromGallery();
+            $('#claimNoticeImageLoader').show();
+        });
+
+
+    });
+})
+;
