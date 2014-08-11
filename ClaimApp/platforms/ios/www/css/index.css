@@ -244,3 +244,16 @@ login panel
     height: 100%;
     width: 100%;
 }
+
+.claimNoticeImageBtn {
+    /*text-align:center;*/
+    /*background-color:#cccccc !important;*/
+    /*border:none;*/
+    /*border: solid #cccccc 5px;*/
+    /*border-radius:32px !important;*/
+    /*text-shadow: none !important;*/
+}
+
+.ui-btn-icon-left:after {
+    left: 25px !important;
+}

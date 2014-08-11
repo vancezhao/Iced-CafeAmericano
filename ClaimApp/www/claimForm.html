@@ -25,6 +25,7 @@
     <!--});-->
     <!--</script>-->
 </head>
+
 <body>
 <div data-role="page" id="claimPage">
     <div data-role="header" class="header" data-position="inline">
@@ -64,26 +65,23 @@
 
     <div data-role='content'>
 
-
         <form id="claimForm" method="post">
 
         </form>
 
         <!-- Image Loader Component-->
-        <panel>
-            <img id="imageUpload" src=""/>
+        <div class="row">
+            <!--<img id="imageUpload" src=""/>-->
+            <!--<a id="upLoadDivBtn" class="fancybox" href="#addingDialog" style="display: none"-->
+            <!--title="enter your login details here">upLoadImage</a>-->
+            <div class="col-xs-6">
+                <a id="takePicBtn" class="ui-icon-camera ui-btn-icon-left claimNoticeImageBtn">Camera</a>
+            </div>
+            <div class="col-xs-6">
+                <a id="openPicFolder" class="ui-icon-bullets ui-btn-icon-left claimNoticeImageBtn">Media File</a>
+            </div>
 
-            <a id="upLoadDivBtn" class="fancybox" href="#addingDialog" style="display: none"
-               title="enter your login details here">upLoadImage</a>
-
-            <button id="takePicBtn" type="button" class="btn btn-default btn-lg">
-                <span class="fui-photo"></span>Take Picture
-            </button>
-
-            <button id="openPicFolder" type="button" class="btn btn-default btn-lg">
-                <span class="fui-photo"></span>Upload Picture
-            </button>
-        </panel>
+        </div>
     </div>
 </div>
 <script>

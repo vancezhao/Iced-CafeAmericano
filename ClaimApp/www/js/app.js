@@ -41,11 +41,13 @@ $(function () {
     var localCookie = $.cookie('claimCookie');
 
     if (typeof localCookie == "undefined") {
-        console.log('need login now!');
+        console.log('cookie is null login now!');
     } else {
+        console.log('authencated successfully login now!');
         claimLogin();
     }
     console.log('localCookie is: ' + localCookie);
+
 // handle login
     $('#loginBtn').on("click", function (event) {
         // Prevent the usual navigation behavior
@@ -257,10 +259,10 @@ $(function () {
                 $('#claimForm').trigger('create');
 
                 $('#claimForm').append('<div class="row" id="claimNoticeImageLoader">' +
-                    '<div class="col-xs-5">' +
+                    '<div class="col-xs-12">' +
                     '<img id="imageDisplay" class="claimNoticeImage img-rounded img-responsive"/>' +
                     '</div>' +
-                    '<div class="col-xs-5">' +
+                    '<div class="col-xs-12">' +
                     '<label for="textarea">Comments</label>' +
                     '<textarea name="textarea" class="claimPictureComment"></textarea>' +
                     '</div></div>');

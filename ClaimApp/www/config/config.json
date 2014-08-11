@@ -1,5 +1,5 @@
 {
-    "ServiceURL": "http://192.168.0.100/claimApp",
+    "ServiceURL": "http://96.126.100.241/claimApp",
     "UserServiceURL": "/api/user",
     "ClaimServiceURL": "/api/claim",
     "UserLoginAPI": "/claimLogin",
