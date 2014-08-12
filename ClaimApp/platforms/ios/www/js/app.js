@@ -124,10 +124,8 @@ $(function () {
             });
     });
 
-
     $(document).on('pagebeforeshow', '#claimPage', function () {
         $.mobile.loading('hide');
-
         $.ajax({
             type: "GET",
             url: $.claimGetFormAPI,

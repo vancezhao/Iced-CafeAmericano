@@ -5,24 +5,159 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f6ddd48-b968-4ad6-a157-11cbb7234428" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/ClaimApp-debug-unaligned.apk" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/ClaimApp-debug-unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/ClaimApp-debug.apk" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/ClaimApp-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/ClaimApp.ap_" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/ClaimApp.ap_" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/fonts/Flat-UI-Icons-24.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/fonts/Flat-UI-Icons-24.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/fonts/lato-black.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/fonts/lato-black.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/fonts/lato-bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/fonts/lato-bold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/fonts/lato-italic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/fonts/lato-italic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/fonts/lato-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/fonts/lato-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons-18-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons-18-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons-36-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons-36-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/png/Book.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/png/Calendar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/png/Chat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/png/Clipboard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/png/Compas.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/png/Gift-Box.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/png/Infinity-Loop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/png/Mail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/png/Map.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/png/Pensils.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/png/Pocket.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/png/Retina-Ready.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/png/Toilet-Paper.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/png/Watches.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/svg/book.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/svg/calendar.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/svg/chat.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/svg/clipboard.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/svg/clocks.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/svg/compas.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/svg/gift-box.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/svg/loop.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/svg/mail.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/svg/map.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/svg/paper-bag.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/svg/pencils.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/svg/retina.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/images/icons/svg/toilet-paper.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/jquery.mobile-1.4.0-rc.1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/flatUI/jquery.mobile.flatui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/flat-ui-icons-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/flat-ui-icons-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/flat-ui-icons-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/flat-ui-icons-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-black.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-black.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-black.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-bold.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-bold.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-bold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-bolditalic.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-bolditalic.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-bolditalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-bolditalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-italic.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-italic.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-italic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-italic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-light.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-light.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-light.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-light.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/fonts/lato/lato-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/fonts/Flat-UI-Icons-24.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/fonts/Flat-UI-Icons-24.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/fonts/lato-black.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/fonts/lato-black.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/fonts/lato-bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/fonts/lato-bold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/fonts/lato-italic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/fonts/lato-italic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/fonts/lato-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/fonts/lato-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons-18-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons-18-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons-36-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons-36-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/png/Book.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/png/Calendar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/png/Chat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/png/Clipboard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/png/Compas.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/png/Gift-Box.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/png/Infinity-Loop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/png/Mail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/png/Map.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/png/Pensils.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/png/Pocket.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/png/Retina-Ready.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/png/Toilet-Paper.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/png/Watches.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/svg/book.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/svg/calendar.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/svg/chat.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/svg/clipboard.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/svg/clocks.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/svg/compas.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/svg/gift-box.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/svg/loop.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/svg/mail.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/svg/map.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/svg/paper-bag.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/svg/pencils.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/svg/retina.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/images/icons/svg/toilet-paper.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/jquery.mobile-1.4.0-rc.1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/flatUI/jquery.mobile.flatui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/flat-ui-icons-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/flat-ui-icons-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/flat-ui-icons-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/flat-ui-icons-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-black.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-black.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-black.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-bold.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-bold.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-bold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-bolditalic.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-bolditalic.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-bolditalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-bolditalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-italic.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-italic.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-italic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-italic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-light.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-light.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-light.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-light.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ClaimApp/www/fonts/lato/lato-regular.woff" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/ClaimApp.xcodeproj/project.xcworkspace/xcuserdata/vancezhao.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ClaimApp/platforms/ios/ClaimApp.xcodeproj/project.xcworkspace/xcuserdata/vancezhao.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/assets/www/js/app.js" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/assets/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/js/app.js" afterPath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/www/js/app.js" afterPath="$PROJECT_DIR$/ClaimApp/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/CordovaLib/ant-build/build.prop" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/CordovaLib/ant-build/build.prop" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/build.prop" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/build.prop" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/assets/www/config.xml" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/assets/www/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/res/xml/config.xml" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/res/xml/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/www/config.xml" afterPath="$PROJECT_DIR$/ClaimApp/www/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/assets/www/css/index.css" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/assets/www/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/css/index.css" afterPath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/www/css/index.css" afterPath="$PROJECT_DIR$/ClaimApp/www/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/assets/www/index.html" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/assets/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/index.html" afterPath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/www/index.html" afterPath="$PROJECT_DIR$/ClaimApp/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/www/menu.html" afterPath="$PROJECT_DIR$/ClaimApp/www/menu.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Iced-CafeAmericano.iws" />
@@ -56,11 +191,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ClaimApp/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.875" vertical-offset="240" max-vertical-offset="1755">
-              <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.5221843" vertical-offset="741" max-vertical-offset="1740">
+              <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -69,11 +204,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="menu.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ClaimApp/www/menu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-24.75" vertical-offset="681" max-vertical-offset="1470">
+              <caret line="85" column="10" selection-start-line="85" selection-start-column="10" selection-end-line="85" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ClaimApp/www/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3912" max-vertical-offset="4740">
-              <caret line="272" column="26" selection-start-line="272" selection-start-column="26" selection-end-line="272" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="3867" max-vertical-offset="4785">
+              <caret line="313" column="2" selection-start-line="313" selection-start-column="2" selection-end-line="313" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -92,11 +237,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ClaimApp/www/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.10373444" vertical-offset="0" max-vertical-offset="3375">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="3345">
+              <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -130,23 +275,23 @@
         <option value="$PROJECT_DIR$/ClaimApp/www/takePicture.html" />
         <option value="$PROJECT_DIR$/ClaimApp/www/config/config.json" />
         <option value="$PROJECT_DIR$/ClaimApp/www/iscorllSample.html" />
-        <option value="$PROJECT_DIR$/ClaimApp/www/menu.html" />
         <option value="$PROJECT_DIR$/ClaimApp/www/js/ClaimImageLoader.js" />
         <option value="$PROJECT_DIR$/ClaimApp/www/main.html" />
         <option value="$PROJECT_DIR$/ClaimApp/www/js/mobile-config.js" />
         <option value="$PROJECT_DIR$/ClaimApp/www/claimForm.html" />
         <option value="$PROJECT_DIR$/ClaimApp/www/productList.html" />
-        <option value="$PROJECT_DIR$/ClaimApp/www/index.html" />
-        <option value="$PROJECT_DIR$/ClaimApp/www/css/index.css" />
         <option value="$PROJECT_DIR$/ClaimApp/www/config.xml" />
+        <option value="$PROJECT_DIR$/ClaimApp/www/menu.html" />
         <option value="$PROJECT_DIR$/ClaimApp/www/js/app.js" />
+        <option value="$PROJECT_DIR$/ClaimApp/www/css/index.css" />
+        <option value="$PROJECT_DIR$/ClaimApp/www/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1436" />
-    <option name="height" value="878" />
+    <option name="width" value="1916" />
+    <option name="height" value="1058" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -221,46 +366,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ClaimApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Iced-CafeAmericano" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Iced-CafeAmericano" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClaimApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="platforms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Iced-CafeAmericano" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Iced-CafeAmericano" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClaimApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="platforms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -348,7 +453,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1436" height="878" extended-state="6" />
+    <frame x="0" y="22" width="1916" height="1058" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -356,9 +461,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2777778" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21899362" sideWeight="0.8452381" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.089370705" sideWeight="0.84615386" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21899362" sideWeight="0.15343915" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.089370705" sideWeight="0.15384616" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -694,14 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ClaimApp/www/takePicture.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1095">
-          <caret line="15" column="112" selection-start-line="15" selection-start-column="112" selection-end-line="15" selection-end-column="112" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ClaimApp/www/uploader.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.2532189" vertical-offset="282" max-vertical-offset="1185">
@@ -730,14 +827,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ClaimApp/www/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5064378" vertical-offset="501" max-vertical-offset="1500">
-          <caret line="57" column="21" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ClaimApp/www/productList.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.51502144" vertical-offset="0" max-vertical-offset="699">
@@ -762,14 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ClaimApp/www/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3912" max-vertical-offset="4740">
-          <caret line="272" column="26" selection-start-line="272" selection-start-column="26" selection-end-line="272" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ClaimApp/www/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.75" vertical-offset="306" max-vertical-offset="1005">
@@ -781,22 +862,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ClaimApp/www/index.html">
+    <entry file="file://$PROJECT_DIR$/ClaimApp/www/takePicture.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.875" vertical-offset="240" max-vertical-offset="1755">
-          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1095">
+          <caret line="15" column="112" selection-start-line="15" selection-start-column="112" selection-end-line="15" selection-end-column="112" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClaimApp/www/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.75" vertical-offset="681" max-vertical-offset="1470">
+          <caret line="85" column="10" selection-start-line="85" selection-start-column="10" selection-end-line="85" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ClaimApp/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10373444" vertical-offset="0" max-vertical-offset="3375">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="3345">
+          <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClaimApp/www/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3867" max-vertical-offset="4785">
+          <caret line="313" column="2" selection-start-line="313" selection-start-column="2" selection-end-line="313" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClaimApp/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5221843" vertical-offset="741" max-vertical-offset="1740">
+          <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
