@@ -5,19 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f6ddd48-b968-4ad6-a157-11cbb7234428" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClaimApp/www/css/default.cust.theme.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/ClaimApp-debug-unaligned.apk" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/ClaimApp-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/ClaimApp-debug.apk" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/ClaimApp-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/ClaimApp.ap_" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/ClaimApp.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/ClaimApp.xcodeproj/project.xcworkspace/xcuserdata/vancezhao.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ClaimApp/platforms/ios/ClaimApp.xcodeproj/project.xcworkspace/xcuserdata/vancezhao.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/assets/www/js/app.js" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/assets/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/js/app.js" afterPath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/www/js/app.js" afterPath="$PROJECT_DIR$/ClaimApp/www/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/CordovaLib/ant-build/build.prop" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/CordovaLib/ant-build/build.prop" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/build.prop" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/ant-build/build.prop" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/assets/www/index.html" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/assets/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/index.html" afterPath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/www/index.html" afterPath="$PROJECT_DIR$/ClaimApp/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/android/assets/www/productList.html" afterPath="$PROJECT_DIR$/ClaimApp/platforms/android/assets/www/productList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/productList.html" afterPath="$PROJECT_DIR$/ClaimApp/platforms/ios/www/productList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClaimApp/www/productList.html" afterPath="$PROJECT_DIR$/ClaimApp/www/productList.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Iced-CafeAmericano.iws" />
@@ -51,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ClaimApp/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="2355">
-              <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
+            <state vertical-scroll-proportion="0.39249146" vertical-offset="375" max-vertical-offset="2355">
+              <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -74,8 +73,8 @@
       <file leaf-file-name="productList.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ClaimApp/www/productList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="795">
-              <caret line="26" column="50" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="50" />
+            <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="795">
+              <caret line="14" column="70" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -84,8 +83,8 @@
       <file leaf-file-name="claimForm.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ClaimApp/www/claimForm.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-28.125" vertical-offset="0" max-vertical-offset="900">
-              <caret line="45" column="76" selection-start-line="45" selection-start-column="76" selection-end-line="45" selection-end-column="76" />
+            <state vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="900">
+              <caret line="29" column="58" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="58" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -106,18 +105,18 @@
       <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ClaimApp/www/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-27.25" vertical-offset="126" max-vertical-offset="1005">
+            <state vertical-scroll-proportion="-32.5" vertical-offset="0" max-vertical-offset="1005">
               <caret line="52" column="15" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ClaimApp/www/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43521595" vertical-offset="2562" max-vertical-offset="3570">
-              <caret line="197" column="12" selection-start-line="197" selection-start-column="12" selection-end-line="197" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2562" max-vertical-offset="3570">
+              <caret line="197" column="87" selection-start-line="197" selection-start-column="87" selection-end-line="197" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -154,14 +153,14 @@
         <option value="$PROJECT_DIR$/ClaimApp/www/menu.html" />
         <option value="$PROJECT_DIR$/ClaimApp/www/js/mobile-config.js" />
         <option value="$PROJECT_DIR$/ClaimApp/www/menuTemplate.html" />
-        <option value="$PROJECT_DIR$/ClaimApp/www/productList.html" />
         <option value="$PROJECT_DIR$/../americano/claim-resource/src/main/webapp/claimForm.html" />
         <option value="$PROJECT_DIR$/ClaimApp/www/css/index.css" />
         <option value="$PROJECT_DIR$/ClaimApp/www/js/index.js" />
         <option value="$PROJECT_DIR$/ClaimApp/www/claimForm.html" />
         <option value="$PROJECT_DIR$/ClaimApp/www/config.xml" />
-        <option value="$PROJECT_DIR$/ClaimApp/www/index.html" />
         <option value="$PROJECT_DIR$/ClaimApp/www/js/app.js" />
+        <option value="$PROJECT_DIR$/ClaimApp/www/productList.html" />
+        <option value="$PROJECT_DIR$/ClaimApp/www/index.html" />
       </list>
     </option>
   </component>
@@ -725,44 +724,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ClaimApp/www/claimForm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.125" vertical-offset="0" max-vertical-offset="900">
-          <caret line="45" column="76" selection-start-line="45" selection-start-column="76" selection-end-line="45" selection-end-column="76" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ClaimApp/www/productList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="795">
-          <caret line="26" column="50" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ClaimApp/www/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.25" vertical-offset="126" max-vertical-offset="1005">
-          <caret line="52" column="15" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ClaimApp/www/css/default.cust.theme.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="903">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ClaimApp/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="2355">
-          <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
           <folding />
         </state>
       </provider>
@@ -785,8 +750,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ClaimApp/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43521595" vertical-offset="2562" max-vertical-offset="3570">
-          <caret line="197" column="12" selection-start-line="197" selection-start-column="12" selection-end-line="197" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2562" max-vertical-offset="3570">
+          <caret line="197" column="87" selection-start-line="197" selection-start-column="87" selection-end-line="197" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClaimApp/www/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-32.5" vertical-offset="0" max-vertical-offset="1005">
+          <caret line="52" column="15" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClaimApp/www/claimForm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="900">
+          <caret line="29" column="58" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="58" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClaimApp/www/productList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="795">
+          <caret line="14" column="70" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClaimApp/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39249146" vertical-offset="375" max-vertical-offset="2355">
+          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
           <folding />
         </state>
       </provider>
