@@ -1,11 +1,16 @@
 .section-layout {
-	width: 100%;
-	border-bottom:1px solid #ececec;
-	padding-bottom: 5px;
+    width: 100%;
+    border-bottom:1px dashed #ececec;
+    padding: 5px 0;
 }
 
 .section-title {
-	font-size: 16px;
-	font-weight:bold;
-	color: #acacac;
+    font-size: 16px;
+    font-weight:bold;
+    color: #acacac;
+}
+
+.ui-field-contain {
+    border-bottom-width: 0px;
+    border-bottom-style: none;
 }
