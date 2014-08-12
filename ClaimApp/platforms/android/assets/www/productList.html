@@ -13,7 +13,10 @@
 <body>
 <div data-role="page" id="productList" data-theme="a">
     <div data-role='header' class='ui-icon-home'>
-        <a id="backBtn" data-role="button" data-icon="back" data-iconpos="notext" data-inline="true" onclick="changeBack()"></a>
+        <a id="menuBtn" href="#menu" data-role="button" data-icon="bars" data-iconpos="notext" data-inline="true"
+           data-theme="a"></a>
+        <a id="backBtn" data-role="button" data-icon="back" data-iconpos="notext" data-inline="true"></a>
+
         <h1>Product List</h1>
     </div>
 
@@ -31,10 +34,14 @@
         </ul>
     </div>
     <script>
-        function changeBack() {
-            console.log('chagne back');
-            $.mobile.changePage("index.html", { transition: "slide"});
-        }
+//        $(function () {
+//                    $('#backBtn').click(function () {
+//                        console.log('backBtn click!');
+//                        $.mobile.changePage("ndex.html", { transition: "slide", reverse: true});
+//                    });
+//
+//                }
+//        );
     </script>
 </div>
 </body>

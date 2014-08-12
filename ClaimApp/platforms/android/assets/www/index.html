@@ -53,25 +53,11 @@
 <body>
 
 <div data-role="page" data-theme="a" id="index">
-    <div data-role='header' class='ui-icon-home' data-position="fixed">
+    <div data-role='header' class='ui-icon-home'>
         <a id="menuBtn" href="#menu" data-role="button" data-icon="bars" data-iconpos="notext" data-inline="true"
            data-theme="a"></a>
 
-        <h3>Claim App</h3>
-
-        <nav id="menu" class="mm-white">
-            <ul class="List" data-role="listview" data-inset="true" data-filter="false">
-                <li class="Label">Navigation</li>
-                <li><a href="#" data-icon="home" id="home">Home</a></li>
-                <li class="Label">Recent Product List</li>
-                <li><a href="#">Property All Risks Insurance</a></li>
-                <li><a href="#">Home Building Fire Insurance</a></li>
-                <li class="Label">Recent Claim Case</li>
-                <li><a href="#">Report at 2014-08-10</a></li>
-                <li><a href="#">Report at 2014-05-21</a></li>
-                <li><a href="#">Report at 2014-02-01</a></li>
-            </ul>
-        </nav>
+        <h1>Smart Claim</h1>
     </div>
 
     <div data-role='content' id="indexContext">
@@ -91,21 +77,70 @@
             <li><a href="#" id="feedback"><img src="img/feedback.png" class="ui-li-icon"/>Feedback</a></li>
         </ul>
     </div>
+
     <script>
         $(function () {
-            $('#menu').mmenu();
+            $('#menu').mmenu({
+                onClick: {
+                    preventDefault: true
+                }
+            }, {
+                offCanvas: {
+                    pageSelector: 'div[data-role="page"]:first'
+                }
+            });
+
+            $('#menu a').on(
+                    'click',
+                    function () {
+                        var _t = this;
+                        $('#menu').one(
+                                'closed.mm',
+                                function () {
+                                    $.mobile.changePage(_t.href, {
+                                        transition: 'slide'
+                                    });
+                                }
+                        );
+                    }
+            );
 
             $('#home').click(function () {
                 console.log('home click!');
-            });
-
-            $('#new').click(function () {
-                $.mobile.changePage("productList.html", { transition: "slide"});
+                $.mobile.changePage('index.html', { transition: "flip"});
             });
         });
+
+        $(document).on(
+                'pageshow',
+                function (e, ui) {
+                    $('#menu').trigger('setPage', [ $(e.target) ]);
+                    $('#menu a').each(
+                            function () {
+                                if ($.mobile.path.parseUrl(this.href).href == window.location.href) {
+                                    $(this).trigger('setSelected.mm');
+                                }
+                            }
+                    );
+                }
+        );
     </script>
 </div>
 <!-- /content -->
+<nav id="menu" class="mm-white">
+    <ul class="List" data-role="listview" data-inset="true" data-filter="false">
+        <li class="Label">Navigation</li>
+        <li><a href="#" data-icon="home" id="home">Home</a></li>
+        <li class="Label">Recent Product List</li>
+        <li><a href="#">Property All Risks Insurance</a></li>
+        <li><a href="#">Home Building Fire Insurance</a></li>
+
+        <li class="Label">Recent Claim Case</li>
+        <li><a href="#">Report at 2014-08-10</a></li>
+        <li><a href="#">Report at 2014-05-21</a></li>
+        <li><a href="#">Report at 2014-02-01</a></li>
+    </ul>
+</nav>
 </body>
 
 </html>

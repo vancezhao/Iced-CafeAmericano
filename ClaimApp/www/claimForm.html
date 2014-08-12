@@ -30,65 +30,27 @@
 <div data-role="page" id="claimPage" data-position="fixed" data-theme="a">
 
     <div data-role='header' class='ui-icon-home'>
-        <a id="backBtn" data-role="button" data-icon="back" data-iconpos="notext" data-inline="true"
-           onclick="changeBack()"></a>
+        <a id="menuBtn" href="#menu" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="a"></a>
+        <a id="backListBtn" data-role="button" data-icon="back" data-iconpos="notext" data-inline="true"></a>
 
         <h1>Claim Information</h1>
     </div>
 
-
     <div data-role='content' id="claimFormContent" data-iscroll>
-        <form method="post">
+        <form method="post" >
+
             <div id="claimForm"></div>
-            <div style='margin-top: 30px;' data-iscroll id="claimFormSubmit">
-                <div id='errorInfo'></div>
-                <input id='gotoClaim' type='button' value='Submit' onclick="onSubmit()"/>
-            </div>
+            <div id="mediaComponent"></div>
+                <div style='margin-top: 30px;'>
+                    <div id='errorInfo'></div>
+                    <input id='submitFormBtn' type='button' value='Submit'/>
+
+                </div>
         </form>
     </div>
 
     <div data-role="footer" data-position="fixed">
     </div>
-
-    <script>
-        function onSubmit() {
-            //$('#errorInfo').html("<a href=\"javascript:onFocus('username')\">Error on username with a long long long long long long long long long long long message</a>");
-            $('#errorInfo').html(JSON.stringify($('#claimForm').serializeObject()));
-            var form = $('#claimForm');
-            /*	$.ajax({
-             type: "POST",
-             url: "api/claim/submitClaimInfo",
-             data: JSON.stringify(form.serializeArray()),
-             cache: false,
-             dataType: "json",
-             success: function(data) {
-             //$('#errorInfo').html(data);
-             }
-             });
-             */
-        }
-        function onFocus(fieldId) {
-            var elm = $('#' + fieldId);
-            elm.focus();
-        }
-
-        $("#claimForm").submit(function (event) {
-            console.log('submit button now!');
-            // Stop form from submitting normally
-            event.preventDefault();
-            $.post("api/claim/submitClaimInfo", function (data) {
-                alert("Data Loaded: " + data);
-            });
-
-        });
-
-        function changeBack() {
-            console.log('backListBtn click!');
-            $.mobile.changePage("productList.html", { transition: "slide"});
-            //$.mobile.changePage($(document.location.href="main.html"), { transition: "slide"} );
-        }
-        ;
-    </script>
 </div>
 </body>
 </html>

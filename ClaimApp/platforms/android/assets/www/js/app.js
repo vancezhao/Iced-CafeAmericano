@@ -5,44 +5,29 @@
 $(function () {
     app.initialize();
 
-    //resize
-    $(window).bind('resize', function () {
-        var content_height = $.mobile.activePage.children('[data-role="content"]').height(),
-            header_height = $.mobile.activePage.children('[data-role="header"]').height(),
-            footer_height = $.mobile.activePage.children('[data-role="footer"]').height(),
-            window_height = $(this).height();
-
-        if (content_height < (window_height - header_height - footer_height)) {
-            $.mobile.activePage.css('min-height', (content_height + header_height + footer_height));
-            setTimeout(function () {
-                $.mobile.activePage.children('[data-role="footer"]').css('top', 0);
-            }, 500);
-        }
-
-        console.log('resize done!');
-    }).trigger('resize');
-
-
     $(document).on("pagebeforechange", function (e, ob) {
-        $.mobile.loading('show');
-
+//        $.mobile.loading('show');
 //        if (ob.toPage && (typeof ob.toPage === "string") && ob.toPage.indexOf('index.html') >= 0) {
 //            console.log("blocking the back");
 //            e.preventDefault();
 //            history.go(1);
 //        }
-
     });
 
-    $(document).on('pagechange', function (e) {
+    $(document).on('pageload', function (e) {
         $.mobile.loading('hide');
-        console.log('page pagechange');
     });
 
     $.isDesktop = (function () {
         return !('ontouchstart' in window) // works on most browsers
             || !('onmsgesturechange' in window); // works on ie10
+
     })();
+
+//    $.get('menuTemplate.html', function (data) {
+//        $(".ui-page").append(data);
+//        $('#menu').mmenu();
+//    });
 
 
 // attach fastClick button
@@ -53,27 +38,28 @@ $(function () {
 
     console.log('localCookie is: ' + localCookie);
 
-    $(document).on('pagebeforeshow', "#home", function (event, data) {
-        console.log('get data from home:  ' + data);
-        $.ajax({
-            type: "GET",
-            url: $.claimProductAPI,
-            cache: false,
-            dataType: "json",
-            success: function onSuccess(data) {
-                $("#resultLog").append("The data is : " + data + "<br/>");
-                var json = data.codeItems;
-                $("#resultLog").append("The eval data is : " + json + "<br/>");
-                $.each(data.codeItems, function (i, item) {
-                    $("#resultLog").append("For Loop key:" + item.key + ", value:" + item.value + "<br/>");
-                    $('#product').append('<option value="' + item.key + '" selected="selected">' + item.key + '</option>');
-                });
-                $('#product').selectmenu('refresh');
-            }
-        });
+    $(document).on('pagebeforeshow', "#index", function (event, data) {
+        console.log('get data from home:  ' + data)
+//        $.ajax({
+//            type: "GET",
+//            url: $.claimProductAPI,
+//            cache: false,
+//            dataType: "json",
+//            success: function onSuccess(data) {
+//                $("#resultLog").append("The data is : " + data + "<br/>");
+//                var json = data.codeItems;
+//                $("#resultLog").append("The eval data is : " + json + "<br/>");
+//                $.each(data.codeItems, function (i, item) {
+//                    $("#resultLog").append("For Loop key:" + item.key + ", value:" + item.value + "<br/>");
+//                    $('#product').append('<option value="' + item.key + '" selected="selected">' + item.key + '</option>');
+//                });
+//                $('#product').selectmenu('refresh');
+//            }
+//        });
     });
 
     $(document).on('pagebeforeshow', "#addingDialog", function (event, data) {
+
         console.log('loading addingDialog');
         var parameters = $(this).data("url").split("?")[1];
 
@@ -142,9 +128,14 @@ $(function () {
             });
     });
 
-
     $(document).on('pagebeforeshow', '#claimPage', function () {
+
         $.mobile.loading('hide');
+
+        $('#backListBtn').click(function () {
+            console.log('backListBtn click!');
+            $.mobile.changePage("productList.html", { transition: "slide", reverse: true});
+        });
 
         $.ajax({
             type: "GET",
@@ -157,7 +148,7 @@ $(function () {
                 $('#claimForm').html(data);
                 $('#claimForm').trigger('create');
 
-                $('#claimForm').append('<div class="row" id="claimNoticeImageLoader">' +
+                $('#mediaComponent').append('<div class="row" id="claimNoticeImageLoader">' +
                     '<div class="col-xs-12">' +
                     '<img id="imageDisplay" class="claimNoticeImage img-rounded img-responsive"/>' +
                     '</div>' +
@@ -166,7 +157,7 @@ $(function () {
                     '<textarea name="textarea" class="claimPictureComment"></textarea>' +
                     '</div></div>');
 
-                $('#claimForm').append('<div class="row" id="mediaBtnGroup">' +
+                $('#mediaComponent').append('<div class="row" id="mediaBtnGroup">' +
                     '<div class="col-xs-6">' +
                     '<a id="takePicBtn" class="ui-icon-camera ui-btn-icon-left claimNoticeImageBtn">Camera</a>' +
                     '</div>' +
@@ -199,7 +190,9 @@ $(function () {
             $('#claimNoticeImageLoader').show();
         });
 
-
+        $('#submitFormBtn').click(function() {
+            console.log('submitFormBtn click!');
+        });
     });
 
     $(document).on('pagebeforeshow', '#productList', function () {
@@ -207,9 +200,9 @@ $(function () {
         console.log('page productList');
         $.mobile.loading('hide');
 
-        $('#menuBtn').click(function () {
+        $('#backBtn').click(function () {
             console.log('backBtn click!');
-            $.mobile.changePage("index.html", { transition: "slide"});
+            $.mobile.changePage("index.html", { transition: "slide", reverse: true});
         });
 
         $('#californiaProperty').click(function () {
@@ -223,15 +216,6 @@ $(function () {
 
     $(document).on('pageinit', '#productList', function () {
         console.log('page init productList');
-
-        $('#menuBtn').click(function () {
-            console.log('backBtn click!');
-            $.mobile.changePage("index.html", { transition: "slide"});
-        });
-
-        function changeBack() {
-            console.log('chagne back');
-            $.mobile.changePage("index.html", { transition: "slide"});
-        }
+        $.mobile.loading('hide');
     });
 });
