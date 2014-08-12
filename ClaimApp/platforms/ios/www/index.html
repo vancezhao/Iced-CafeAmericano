@@ -9,6 +9,7 @@
     <meta name="viewport"
           content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
     <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.3.min.css">
+    <link rel="stylesheet" href="css/themes/default/jquery.mobile.theme-1.4.3.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
 
     <script type="text/javascript" charset="utf-8" src="js/jquery-2.0.0.js"></script>
@@ -40,8 +41,6 @@
     <!-- Loading iscorll js-->
     <script src="isScroll/iscroll.js"></script>
     <script src="isScroll/jquery.mobile.iscrollview.js"></script>
-    <script src="isScroll/layer_xy_hack.js"></script>
-    <script src="isScroll/pull-example.js"></script>
 
     <!-- Loading main js -->
     <script src="js/app.js"></script>
@@ -49,33 +48,61 @@
 </head>
 
 <body>
-<div id="mainLogin" data-role="page">
-    <div data-role="header" id="header">
-        <a data-iconpos="notext" data-role="button" data-icon="home" title="Home">Home</a>
 
-        <h1>Home</h1>
-        <a data-iconpos="notext" href="#panel" data-role="button" data-icon="flat-menu"></a>
-    </div>
-    <div data-role="content">
+<div data-role="page" data-theme="a" id="index">
+    <div data-role='header' class='ui-icon-home'>
+        <a id="menuBtn" href="#menu" data-role="button" data-icon="bars" data-iconpos="notext" data-inline="true"
+           data-theme="a"></a>
 
-        <div class="login-form">
-            <div class="form-group">
-                <input type="text" class="form-control login-field" value="test user" placeholder="test"
-                       id="login-name">
-                <label class="login-field-icon fui-user" for="login-name"></label>
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-control login-field" value="test" placeholder="test"
-                       id="login-pass">
-                <label class="login-field-icon fui-lock" for="login-pass"></label>
-            </div>
-            <a id="loginBtn" class="btn btn-primary btn-lg btn-block" href="#">Log in</a>
-            <a class="login-link" href="#">Lost your password?</a>
+        <h3>Claim App</h3>
+
+        <nav id="menu" class="mm-white">
+            <ul class="List" data-role="listview" data-inset="true" data-filter="false">
+                <li class="Label">Navigation</li>
+                <li><a href="#" data-icon="home" id="home">Home</a></li>
+                <li class="Label">Recent Product List</li>
+                <li><a href="#">Property All Risks Insurance</a></li>
+                <li><a href="#">Home Building Fire Insurance</a></li>
+                <li class="Label">Recent Claim Case</li>
+                <li><a href="#">Report at 2014-08-10</a></li>
+                <li><a href="#">Report at 2014-05-21</a></li>
+                <li><a href="#">Report at 2014-02-01</a></li>
+            </ul>
+        </nav>
+
+        <div data-role='content'>
+            <div style="font-weight: bold; font-size: 16px;">Claim Function</div>
+            <ul data-role="listview" data-inset="true" data-filter="false">
+                <li><a href="productList.html" id="new"><img src="img/new.png" class="ui-li-icon"/>New Claim</a></li>
+                <li><a href="#" id="result"><img src="img/result.png" class="ui-li-icon"/>Claim Process Result<span
+                        class="ui-li-count">2</span></a></li>
+                <li><a href="#" id="query"><img src="img/query.png" class="ui-li-icon"/>History Journal</a></li>
+                <li><a href="#" id="news"><img src="img/news.png" class="ui-li-icon"/>Insurance News<span
+                        class="ui-li-count">8</span></a></li>
+            </ul>
+
+            <div style="font-weight: bold; font-size: 16px;">Setting</div>
+            <ul data-role="listview" data-inset="true" data-filter="false">
+                <li><a href="#" id="user"><img src="img/user.png" class="ui-li-icon"/>My Account</a></li>
+                <li><a href="#" id="feedback"><img src="img/feedback.png" class="ui-li-icon"/>Feedback</a></li>
+            </ul>
         </div>
+
     </div>
-    <div data-role="footer" id="footer">
-        <h4></h4>
-    </div>
+
+    <script>
+        $(function () {
+            $('#menu').mmenu();
+
+            $('#home').click(function () {
+                console.log('home click!');
+            });
+
+            $('#new').click(function () {
+                $.mobile.changePage("productList.html", { transition: "slide"});
+            });
+        });
+    </script>
 </div>
 <!-- /content -->
 </body>

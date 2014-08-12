@@ -4,8 +4,8 @@
 $(document).bind("mobileinit", function () {
     $.getJSON('config/config.json', function (data) {
         $.serviceURL = data.ServiceURL;
-        $.claimServiceURL = $.serviceURL+data.ClaimServiceURL;
-        $.userServiceURL = $.serviceURL+data.UserServiceURL;
+        $.claimServiceURL = $.serviceURL + data.ClaimServiceURL;
+        $.userServiceURL = $.serviceURL + data.UserServiceURL;
         $.claimLoginAPI = $.userServiceURL + data.UserLoginAPI;
         $.claimProductAPI = $.claimServiceURL + data.ClaimProductAPI;
         $.claimImageUploadAPI = $.claimServiceURL + data.ClaimImageUploadAPI;
@@ -19,13 +19,14 @@ $(document).bind("mobileinit", function () {
         $.mobile.loader.prototype.options.html = "";
 
         $.mobile.touchOverflowEnabled = true;
+
     })
 });
 
 
-$(document).delegate("div.pull-demo-page", "pageinit", function(event) {
-    $(".iscroll-wrapper", this).bind( {
-        "iscroll_onpulldown" : onPullDown,
-        "iscroll_onpullup"   : onPullUp
+$(document).delegate("div.pull-demo-page", "pageinit", function (event) {
+    $(".iscroll-wrapper", this).bind({
+        "iscroll_onpulldown": onPullDown,
+        "iscroll_onpullup": onPullUp
     });
 });

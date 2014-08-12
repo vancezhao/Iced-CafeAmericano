@@ -1,91 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Loading main js -->
-    <script src="js/main_.js"></script>
-
 </head>
 <body>
-<div data-role="page" id="home" data-theme="a">
-
+<div data-role="page" data-theme="a">
     <div data-role='header' class='ui-icon-home'>
-        <h1>理赔产品首页</h1>
-    </div>
+        <a id="menuBtn" href="#menu" data-role="button" data-icon="bars" data-iconpos="notext" data-inline="true"
+           data-theme="a"></a>
 
-    <div data-role='content'>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about/">About us</a></li>
-            <li><a href="/contact/">Contact</a></li>
-        </ul>
+        <h1>Claim App</h1>
 
-        <fieldset data-role='fieldcontain'>
-            <label for='category'>选择产品类型</label>
-            <select name='category' id='category' data-native-menu='false'>
-                <option value=''></option>
-                <option value='mon'>车险</option>
-                <option value='tue'>家产险</option>
-                <option value='wed'>健康意外险</option>
-            </select>
-        </fieldset>
+        <nav id="menu" class="mm-white">
+            <ul class="List" data-role="listview" data-inset="true" data-filter="false">
+                <li class="Label">Navigation</li>
+                <li><a href="#" data-icon="home" id="home">Home</a></li>
+                <li class="Label">Recent Product List</li>
+                <li><a href="#">Property All Risks Insurance</a></li>
+                <li><a href="#">Home Building Fire Insurance</a></li>
+                <li class="Label">Recent Claim Case</li>
+                <li><a href="#">Report at 2014-08-10</a></li>
+                <li><a href="#">Report at 2014-05-21</a></li>
+                <li><a href="#">Report at 2014-02-01</a></li>
+            </ul>
+        </nav>
 
-        <fieldset data-role='fieldcontain'>
-            <label for='product'>产品名</label>
-            <select name='product' id='product' data-native-menu='false'>
-                <option value=''></option>
-            </select>
-        </fieldset>
-        <div style='margin-top: 30px;'>
-            <input id='gotoClaim' type='button' value='Submit'/>
+        <div data-role='content'>
+            <div style="font-weight: bold; font-size: 16px;">Claim Function</div>
+            <ul data-role="listview" data-inset="true" data-filter="false">
+                <li><a href="productList.html" id="new"><img src="img/new.png" class="ui-li-icon"/>New Claim</a></li>
+                <li><a href="#" id="result"><img src="img/result.png" class="ui-li-icon"/>Claim Process Result<span
+                        class="ui-li-count">2</span></a></li>
+                <li><a href="#" id="query"><img src="img/query.png" class="ui-li-icon"/>History Journal</a></li>
+                <li><a href="#" id="news"><img src="img/news.png" class="ui-li-icon"/>Insurance News<span
+                        class="ui-li-count">8</span></a></li>
+            </ul>
+
+            <div style="font-weight: bold; font-size: 16px;">Setting</div>
+            <ul data-role="listview" data-inset="true" data-filter="false">
+                <li><a href="#" id="user"><img src="img/user.png" class="ui-li-icon"/>My Account</a></li>
+                <li><a href="#" id="feedback"><img src="img/feedback.png" class="ui-li-icon"/>Feedback</a></li>
+            </ul>
         </div>
-        <div id='resultLog'></div>
-        <div id="index"></div>
 
-        <button type="button" class="btn btn-default btn-lg" id="mainToTakePciture">
-            <span class="fui-photo"></span> SnapIt!
-        </button>
     </div>
 
-    <nav id="menu">
-        <ul>
-            <li><a href="#">Home</a>
-            </li>
-            <li><a href="#about">About us</a>
-                <ul>
-                    <li><a href="#about/history">History</a>
-                    </li>
-                    <li><a href="#about/team">The team</a>
-                        <ul>
-                            <li><a href="#about/team/management">Management</a>
-                            </li>
-                            <li><a href="#about/team/sales">Sales</a>
-                            </li>
-                            <li><a href="#about/team/development">Development</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#about/address">Our address</a>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    
     <script>
         $(function () {
             $('#menu').mmenu();
 
-            $('#mainToTakePciture').click(function () {
-                console.log('mainToTakePciture click!');
-                $.mobile.changePage('takePicture.html', {});
+            $('#home').click(function () {
+                console.log('home click!');
+            });
+
+            $('#new').click(function () {
+                $.mobile.changePage("productList.html", { transition: "slide"});
             });
         });
     </script>
-
 </div>
-
-
 </body>
 </html>
