@@ -29,6 +29,10 @@ $(function () {
 //        $('#menu').mmenu();
 //    });
 
+    $('#new').on('click', function () {
+        console.log('new claim');
+        $.mobile.changePage("productList.html", { transition: "slide"});
+    });
 
 // attach fastClick button
     FastClick.attach(document.body);
@@ -190,8 +194,15 @@ $(function () {
             $('#claimNoticeImageLoader').show();
         });
 
-        $('#submitFormBtn').click(function() {
-            console.log('submitFormBtn click!');
+        $('#submitFormBtn').click(function () {
+            window.plugins.toast.showShortTop('Claim Notice Successfully! ', function () {
+            }, function (error) {
+                console.error('error' + error)
+            });
+            $.mobile.changePage('index.html', {
+                transition: "slide",
+                showLoadMsg: true
+            });
         });
     });
 

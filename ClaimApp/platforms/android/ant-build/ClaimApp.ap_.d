@@ -72,6 +72,7 @@
 /Users/vancezhao/Documents/mocha-platform/Iced-CafeAmericano/ClaimApp/platforms/android/assets/www/bootstrap/js/holder.js \
 /Users/vancezhao/Documents/mocha-platform/Iced-CafeAmericano/ClaimApp/platforms/android/assets/www/bootstrap/js/google-code-prettify/prettify.js \
 /Users/vancezhao/Documents/mocha-platform/Iced-CafeAmericano/ClaimApp/platforms/android/assets/www/config/config.json \
+/Users/vancezhao/Documents/mocha-platform/Iced-CafeAmericano/ClaimApp/platforms/android/assets/www/css/default.cust.theme.css \
 /Users/vancezhao/Documents/mocha-platform/Iced-CafeAmericano/ClaimApp/platforms/android/assets/www/css/index.css \
 /Users/vancezhao/Documents/mocha-platform/Iced-CafeAmericano/ClaimApp/platforms/android/assets/www/css/themes \
 /Users/vancezhao/Documents/mocha-platform/Iced-CafeAmericano/ClaimApp/platforms/android/assets/www/css/themes/default \
