@@ -26,6 +26,9 @@ var app = {
 //            $('[data-role="header"]').addClass("ios7");
 //            document.body.style.marginTop = "20px";
         }
+    },
+    exit: function(){
+
     }
 
 };

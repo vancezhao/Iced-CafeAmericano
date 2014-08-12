@@ -109,6 +109,16 @@
                 console.log('home click!');
                 $.mobile.changePage('index.html', { transition: "flip"});
             });
+            $('#exitApp').click(function () {
+                if (navigator.app) {
+                    navigator.app.exitApp();
+                    console.log('app exit');
+                }
+                else if (navigator.device) {
+                    navigator.device.exitApp();
+                    console.log('device exit');
+                }
+            });
         });
 
         $(document).on(
@@ -139,6 +149,8 @@
         <li><a href="#">Report at 2014-08-10</a></li>
         <li><a href="#">Report at 2014-05-21</a></li>
         <li><a href="#">Report at 2014-02-01</a></li>
+
+        <li><a href="#" data-icon="power" id="exitApp">Exit</a></li>
     </ul>
 </nav>
 </body>
