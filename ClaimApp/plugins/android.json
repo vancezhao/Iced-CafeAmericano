@@ -9,11 +9,11 @@
                 "parents": {
                     "/*": [
                         {
-                            "xml": "<feature name=\"Toast\"><param name=\"android-package\" value=\"nl.xservices.plugins.Toast\" /></feature>",
+                            "xml": "<feature name=\"File\"><param name=\"android-package\" value=\"org.apache.cordova.file.FileUtils\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Camera\"><param name=\"android-package\" value=\"org.apache.cordova.camera.CameraLauncher\" /></feature>",
+                            "xml": "<feature name=\"FileTransfer\"><param name=\"android-package\" value=\"org.apache.cordova.filetransfer.FileTransfer\" /></feature>",
                             "count": 1
                         },
                         {
@@ -21,11 +21,11 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"File\"><param name=\"android-package\" value=\"org.apache.cordova.file.FileUtils\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "xml": "<feature name=\"Camera\"><param name=\"android-package\" value=\"org.apache.cordova.camera.CameraLauncher\" /></feature>",
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"FileTransfer\"><param name=\"android-package\" value=\"org.apache.cordova.filetransfer.FileTransfer\" /></feature>",
+                            "xml": "<feature name=\"Toast\"><param name=\"android-package\" value=\"nl.xservices.plugins.Toast\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -44,7 +44,10 @@
         }
     },
     "installed_plugins": {
-        "nl.x-services.plugins.toast": {
+        "org.apache.cordova.file-transfer": {
+            "PACKAGE_NAME": "com.mocha"
+        },
+        "org.apache.cordova.device": {
             "PACKAGE_NAME": "com.mocha"
         },
         "org.apache.cordova.camera": {
@@ -53,15 +56,13 @@
         "org.apache.cordova.console": {
             "PACKAGE_NAME": "com.mocha"
         },
-        "org.apache.cordova.device": {
-            "PACKAGE_NAME": "com.mocha"
-        },
-        "org.apache.cordova.file": {
-            "PACKAGE_NAME": "com.mocha"
-        },
-        "org.apache.cordova.file-transfer": {
+        "nl.x-services.plugins.toast": {
             "PACKAGE_NAME": "com.mocha"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "org.apache.cordova.file": {
+            "PACKAGE_NAME": "com.mocha"
+        }
+    }
 }

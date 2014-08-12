@@ -1,15 +1,25 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/nl.x-services.plugins.toast/www/Toast.js",
-        "id": "nl.x-services.plugins.toast.Toast",
+        "file": "plugins/org.apache.cordova.file-transfer/www/FileTransferError.js",
+        "id": "org.apache.cordova.file-transfer.FileTransferError",
         "clobbers": [
-            "window.plugins.toast"
+            "window.FileTransferError"
         ]
     },
     {
-        "file": "plugins/nl.x-services.plugins.toast/test/tests.js",
-        "id": "nl.x-services.plugins.toast.tests"
+        "file": "plugins/org.apache.cordova.file-transfer/www/FileTransfer.js",
+        "id": "org.apache.cordova.file-transfer.FileTransfer",
+        "clobbers": [
+            "window.FileTransfer"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.device/www/device.js",
+        "id": "org.apache.cordova.device.device",
+        "clobbers": [
+            "device"
+        ]
     },
     {
         "file": "plugins/org.apache.cordova.camera/www/CameraConstants.js",
@@ -40,11 +50,15 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/org.apache.cordova.device/www/device.js",
-        "id": "org.apache.cordova.device.device",
+        "file": "plugins/nl.x-services.plugins.toast/www/Toast.js",
+        "id": "nl.x-services.plugins.toast.Toast",
         "clobbers": [
-            "device"
+            "window.plugins.toast"
         ]
+    },
+    {
+        "file": "plugins/nl.x-services.plugins.toast/test/tests.js",
+        "id": "nl.x-services.plugins.toast.tests"
     },
     {
         "file": "plugins/org.apache.cordova.file/www/DirectoryEntry.js",
@@ -191,31 +205,17 @@ module.exports = [
             "cordova"
         ],
         "runs": true
-    },
-    {
-        "file": "plugins/org.apache.cordova.file-transfer/www/FileTransferError.js",
-        "id": "org.apache.cordova.file-transfer.FileTransferError",
-        "clobbers": [
-            "window.FileTransferError"
-        ]
-    },
-    {
-        "file": "plugins/org.apache.cordova.file-transfer/www/FileTransfer.js",
-        "id": "org.apache.cordova.file-transfer.FileTransfer",
-        "clobbers": [
-            "window.FileTransfer"
-        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
+    "org.apache.cordova.file-transfer": "0.4.5",
+    "org.apache.cordova.device": "0.2.11",
+    "org.apache.cordova.camera": "0.3.1",
+    "org.apache.cordova.console": "0.2.10",
     "nl.x-services.plugins.toast": "2.0",
-    "org.apache.cordova.camera": "0.3.1-dev",
-    "org.apache.cordova.console": "0.2.9",
-    "org.apache.cordova.device": "0.2.10",
-    "org.apache.cordova.file": "1.2.1-dev",
-    "org.apache.cordova.file-transfer": "0.4.5-dev"
+    "org.apache.cordova.file": "1.3.0"
 }
 // BOTTOM OF METADATA
 });
