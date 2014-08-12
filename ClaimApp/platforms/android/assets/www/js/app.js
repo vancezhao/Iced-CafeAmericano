@@ -5,8 +5,25 @@
 $(function () {
     app.initialize();
 
+    //resize
+    $(window).bind('resize', function () {
+        var content_height = $.mobile.activePage.children('[data-role="content"]').height(),
+            header_height = $.mobile.activePage.children('[data-role="header"]').height(),
+            footer_height = $.mobile.activePage.children('[data-role="footer"]').height(),
+            window_height = $(this).height();
+
+        if (content_height < (window_height - header_height - footer_height)) {
+            $.mobile.activePage.css('min-height', (content_height + header_height + footer_height));
+            setTimeout(function () {
+                $.mobile.activePage.children('[data-role="footer"]').css('top', 0);
+            }, 500);
+        }
+
+        console.log('resize done!');
+    }).trigger('resize');
+
+
     $(document).on("pagebeforechange", function (e, ob) {
-//        console.log('page before change');
         $.mobile.loading('show');
 
 //        if (ob.toPage && (typeof ob.toPage === "string") && ob.toPage.indexOf('index.html') >= 0) {

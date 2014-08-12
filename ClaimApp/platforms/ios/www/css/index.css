@@ -285,3 +285,27 @@ login panel
 #mediaBtnGroup {
     margin-top: 10px;
 }
+#menu{
+    margin-top: 15px !important;
+}
+#menu .mm-menu > .mm-list  {
+    border: none !important;
+}
+
+#menu .mm-menu.mm-white .mm-list > li.mm-label{
+    border: none !important;
+}
+
+#menu .ui-listview-inset>li>a.ui-btn {
+    border: none !important;
+}
+#menu .mm-menu .mm-list > li.mm-label {
+    border: none !important;
+}
+#menu li {
+    border: none !important;
+}
+
+#indexContext{
+    background-color: transparent !important;
+}

@@ -5,9 +5,12 @@
     <meta charset="utf-8"/>
     <meta name="format-detection" content="telephone=no"/>
     <meta name="msapplication-tap-highlight" content="no"/>
-    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="viewport"
-          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width,height=device-height, target-densitydpi=device-dpi"/>
+
+
     <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.3.min.css">
     <link rel="stylesheet" href="css/themes/default/jquery.mobile.theme-1.4.3.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
@@ -50,7 +53,7 @@
 <body>
 
 <div data-role="page" data-theme="a" id="index">
-    <div data-role='header' class='ui-icon-home'>
+    <div data-role='header' class='ui-icon-home' data-position="fixed">
         <a id="menuBtn" href="#menu" data-role="button" data-icon="bars" data-iconpos="notext" data-inline="true"
            data-theme="a"></a>
 
@@ -69,27 +72,25 @@
                 <li><a href="#">Report at 2014-02-01</a></li>
             </ul>
         </nav>
-
-        <div data-role='content'>
-            <div style="font-weight: bold; font-size: 16px;">Claim Function</div>
-            <ul data-role="listview" data-inset="true" data-filter="false">
-                <li><a href="productList.html" id="new"><img src="img/new.png" class="ui-li-icon"/>New Claim</a></li>
-                <li><a href="#" id="result"><img src="img/result.png" class="ui-li-icon"/>Claim Process Result<span
-                        class="ui-li-count">2</span></a></li>
-                <li><a href="#" id="query"><img src="img/query.png" class="ui-li-icon"/>History Journal</a></li>
-                <li><a href="#" id="news"><img src="img/news.png" class="ui-li-icon"/>Insurance News<span
-                        class="ui-li-count">8</span></a></li>
-            </ul>
-
-            <div style="font-weight: bold; font-size: 16px;">Setting</div>
-            <ul data-role="listview" data-inset="true" data-filter="false">
-                <li><a href="#" id="user"><img src="img/user.png" class="ui-li-icon"/>My Account</a></li>
-                <li><a href="#" id="feedback"><img src="img/feedback.png" class="ui-li-icon"/>Feedback</a></li>
-            </ul>
-        </div>
-
     </div>
 
+    <div data-role='content' id="indexContext">
+        <div style="font-weight: bold; font-size: 16px;">Claim Function</div>
+        <ul data-role="listview" data-inset="true" data-filter="false">
+            <li><a href="productList.html" id="new"><img src="img/new.png" class="ui-li-icon"/>New Claim</a></li>
+            <li><a href="#" id="result"><img src="img/result.png" class="ui-li-icon"/>Claim Process Result<span
+                    class="ui-li-count">2</span></a></li>
+            <li><a href="#" id="query"><img src="img/query.png" class="ui-li-icon"/>History Journal</a></li>
+            <li><a href="#" id="news"><img src="img/news.png" class="ui-li-icon"/>Insurance News<span
+                    class="ui-li-count">8</span></a></li>
+        </ul>
+
+        <div style="font-weight: bold; font-size: 16px;">Setting</div>
+        <ul data-role="listview" data-inset="true" data-filter="false">
+            <li><a href="#" id="user"><img src="img/user.png" class="ui-li-icon"/>My Account</a></li>
+            <li><a href="#" id="feedback"><img src="img/feedback.png" class="ui-li-icon"/>Feedback</a></li>
+        </ul>
+    </div>
     <script>
         $(function () {
             $('#menu').mmenu();

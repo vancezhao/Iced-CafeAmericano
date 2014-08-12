@@ -6,7 +6,6 @@ $(function () {
     app.initialize();
 
     $(document).on("pagebeforechange", function (e, ob) {
-//        console.log('page before change');
         $.mobile.loading('show');
 
 //        if (ob.toPage && (typeof ob.toPage === "string") && ob.toPage.indexOf('index.html') >= 0) {
