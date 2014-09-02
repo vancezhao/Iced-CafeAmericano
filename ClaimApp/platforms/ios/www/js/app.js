@@ -5,6 +5,10 @@
 $(function () {
     app.initialize();
 
+    window.onerror = function(message, url, lineNumber) {
+        console.log("Error: "+message+" in "+url+" at line "+lineNumber);
+    }
+
     $(document).on("pagebeforechange", function (e, ob) {
 //        $.mobile.loading('show');
 //        if (ob.toPage && (typeof ob.toPage === "string") && ob.toPage.indexOf('index.html') >= 0) {
@@ -13,6 +17,8 @@ $(function () {
 //            history.go(1);
 //        }
     });
+
+    test();
 
     $(document).on('pageload', function (e) {
         $.mobile.loading('hide');
@@ -23,11 +29,6 @@ $(function () {
             || !('onmsgesturechange' in window); // works on ie10
 
     })();
-
-//    $.get('menuTemplate.html', function (data) {
-//        $(".ui-page").append(data);
-//        $('#menu').mmenu();
-//    });
 
     $('#new').on('click', function () {
         console.log('new claim');
@@ -63,16 +64,10 @@ $(function () {
     });
 
     $(document).on('pagebeforeshow', "#addingDialog", function (event, data) {
-
-        console.log('loading addingDialog');
         var parameters = $(this).data("url").split("?")[1];
-
         var imageURI = parameters;
-        console.log('addingDialog for data:  ' + imageURI);
 
         $('#imageCancel').click(function () {
-            console.log('get data on addingDialog:  ' + imageURI + ' when click imageCancel');
-
             $.mobile.changePage("takePicture.html", {
                 data: imageURI });
         });
@@ -105,7 +100,6 @@ $(function () {
                 };
                 navigator.camera.getPicture(
                     function (imageURI) {
-//                $('#takePicImage').attr('src', imageURI);
                         imageUploader(imageURI)
                     }, function (error) {
                         console.error('capture camera error message: ' + error);
@@ -133,9 +127,7 @@ $(function () {
     });
 
     $(document).on('pagebeforeshow', '#claimPage', function () {
-
         $.mobile.loading('hide');
-
         $('#backListBtn').click(function () {
             console.log('backListBtn click!');
             $.mobile.changePage("productList.html", { transition: "slide", reverse: true});

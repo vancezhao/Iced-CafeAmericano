@@ -22,10 +22,12 @@ var app = {
     receivedEvent: function (id) {
         console.log('app started.');
         console.log('device version is: ' + parseFloat(window.device.version));
-        if (parseFloat(window.device.version) > 7.0) {
-//            $('[data-role="header"]').addClass("ios7");
-//            document.body.style.marginTop = "20px";
-        }
+
+        console.log('phoneName ' + device.name);
+        console.log('platform ' + device.platform);
+
+        $.devicePlatform=device.platform;
+
     },
     exit: function(){
 

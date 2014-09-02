@@ -21,6 +21,9 @@
     <feature name="Toast">
         <param name="android-package" value="nl.xservices.plugins.Toast" />
     </feature>
+    <feature name="ExitApp">
+        <param name="android-package" value="com.cmpsoft.mobile.plugin.exitapp.ExitApp" />
+    </feature>
     <name>Smart Claim</name>
     <description>
         Hello World sample application that responds to the deviceready event.

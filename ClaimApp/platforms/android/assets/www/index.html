@@ -1,30 +1,23 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8"/>
     <meta name="format-detection" content="telephone=no"/>
     <meta name="msapplication-tap-highlight" content="no"/>
-
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="viewport"
           content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width,height=device-height, target-densitydpi=device-dpi"/>
-
-
     <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.3.min.css">
     <link rel="stylesheet" href="css/themes/default/jquery.mobile.theme-1.4.3.min.css">
     <link rel="stylesheet" href="css/default.cust.theme.css"/>
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
-
     <script type="text/javascript" charset="utf-8" src="js/jquery-2.0.0.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/mobile-config.js"></script>
-
     <script src="js/jquery.mobile-1.4.3.js"></script>
     <title>Claim App</title>
     <script type="text/javascript" src="js/fastclick.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-
     <!-- Loading cookie js -->
     <script src="js/jquery.cookie.js"></script>
 
@@ -109,7 +102,8 @@
                 console.log('home click!');
                 $.mobile.changePage('index.html', { transition: "flip"});
             });
-            $('#exitApp').click(function () {
+
+            $('#exitApp').on('click', function () {
                 navigator.app.exitApp();
             });
         });
@@ -125,6 +119,15 @@
                                 }
                             }
                     );
+                    console.log('$.devicePlatform : ' + $.devicePlatform);
+                    var devicePlatform = $.devicePlatform;
+                    if (devicePlatform == 'iOS') {
+                        $('#logout').hide();
+                        $('#exitApp').hide();
+                    } else {
+                        $('#logout').show();
+                        $('#exitApp').show();
+                    }
                 }
         );
     </script>
@@ -143,7 +146,8 @@
         <li><a href="#">Report at 2014-05-21</a></li>
         <li><a href="#">Report at 2014-02-01</a></li>
 
-        <!--<li><a href="#" data-icon="power" id="exitApp">Exit</a></li>-->
+        <li class="Label" id="logout">Logout</li>
+        <li><a href="#" id="exitApp">ExitApp</a></li>
     </ul>
 </nav>
 </body>

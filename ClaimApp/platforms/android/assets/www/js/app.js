@@ -24,11 +24,6 @@ $(function () {
 
     })();
 
-//    $.get('menuTemplate.html', function (data) {
-//        $(".ui-page").append(data);
-//        $('#menu').mmenu();
-//    });
-
     $('#new').on('click', function () {
         console.log('new claim');
         $.mobile.changePage("productList.html", { transition: "slide"});
@@ -63,16 +58,10 @@ $(function () {
     });
 
     $(document).on('pagebeforeshow', "#addingDialog", function (event, data) {
-
-        console.log('loading addingDialog');
         var parameters = $(this).data("url").split("?")[1];
-
         var imageURI = parameters;
-        console.log('addingDialog for data:  ' + imageURI);
 
         $('#imageCancel').click(function () {
-            console.log('get data on addingDialog:  ' + imageURI + ' when click imageCancel');
-
             $.mobile.changePage("takePicture.html", {
                 data: imageURI });
         });
@@ -105,7 +94,6 @@ $(function () {
                 };
                 navigator.camera.getPicture(
                     function (imageURI) {
-//                $('#takePicImage').attr('src', imageURI);
                         imageUploader(imageURI)
                     }, function (error) {
                         console.error('capture camera error message: ' + error);
@@ -133,9 +121,7 @@ $(function () {
     });
 
     $(document).on('pagebeforeshow', '#claimPage', function () {
-
         $.mobile.loading('hide');
-
         $('#backListBtn').click(function () {
             console.log('backListBtn click!');
             $.mobile.changePage("productList.html", { transition: "slide", reverse: true});

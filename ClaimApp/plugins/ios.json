@@ -92,6 +92,9 @@
         },
         "nl.x-services.plugins.toast": {
             "PACKAGE_NAME": "com.mocha"
+        },
+        "com.cmpsoft.mobile.plugin.exitapp": {
+            "PACKAGE_NAME": "com.mocha"
         }
     },
     "dependent_plugins": {

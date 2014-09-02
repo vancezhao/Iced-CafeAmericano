@@ -229,6 +229,7 @@ module.exports.metadata =
     "org.apache.cordova.camera": "0.3.1",
     "org.apache.cordova.console": "0.2.10",
     "nl.x-services.plugins.toast": "2.0",
+    "com.cmpsoft.mobile.plugin.exitapp": "1.0.0",
     "org.apache.cordova.file": "1.3.0"
 }
 // BOTTOM OF METADATA

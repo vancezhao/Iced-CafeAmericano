@@ -1,4 +1,5 @@
 /Users/vancezhao/Documents/mocha-platform/Iced-CafeAmericano/ClaimApp/platforms/android/ant-build/classes.dex : \
+/Users/vancezhao/Documents/mocha-platform/Iced-CafeAmericano/ClaimApp/platforms/android/ant-build/classes/com/cmpsoft/mobile/plugin/exitapp/ExitApp.class \
 /Users/vancezhao/Documents/mocha-platform/Iced-CafeAmericano/ClaimApp/platforms/android/ant-build/classes/com/mocha/BuildConfig.class \
 /Users/vancezhao/Documents/mocha-platform/Iced-CafeAmericano/ClaimApp/platforms/android/ant-build/classes/com/mocha/ClaimApp.class \
 /Users/vancezhao/Documents/mocha-platform/Iced-CafeAmericano/ClaimApp/platforms/android/ant-build/classes/com/mocha/R$attr.class \

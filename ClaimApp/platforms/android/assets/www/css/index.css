@@ -227,36 +227,6 @@ login panel
     padding-top: 20px !important;
 }
 
-#backBtn {
-    /*background-image: url("../img/menu.png") !important;*/
-    /*background: no-repeat;*/
-    /*background-size: 30px 30px;*/
-    /*height: 30px;*/
-    /*width: 30px;*/
-    /*margin-top: 5px;*/
-    /*border: none !important;*/
-    /*box-shadow: none !important;*/
-    background-color: transparent;
-    border: 0;
-    box-shadow: none !important;
-    background: none !important;
-}
-
-#backListBtn {
-    /*background-image: url("../img/menu.png") !important;*/
-    /*background: no-repeat;*/
-    /*background-size: 30px 30px;*/
-    /*height: 30px;*/
-    /*width: 30px;*/
-    /*margin-top: 5px;*/
-    /*border: none !important;*/
-    /*box-shadow: none !important;*/
-    background-color: transparent;
-    border: 0;
-    box-shadow: none !important;
-    background: none !important;
-}
-
 /**/
 
 .claimNoticeImage {

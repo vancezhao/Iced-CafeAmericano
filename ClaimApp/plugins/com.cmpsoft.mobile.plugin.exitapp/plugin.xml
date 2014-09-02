@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.cmpsoft.mobile.plugin.exitapp"
+    version="1.0.0">
+	<name>ExitApp</name>
+	<description>ExitApp plugin description</description>
+	<license>Apache 2.0</license>
+	<keywords>cmpsoft,ExitApp</keywords>
+	
+	<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ExitApp" >
+                <param name="android-package" value="com.cmpsoft.mobile.plugin.exitapp.ExitApp"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/ExitApp.java" target-dir="src/com/cmpsoft/mobile/plugin/exitapp" />
+	</platform>
+</plugin>

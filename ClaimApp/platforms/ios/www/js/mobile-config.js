@@ -11,8 +11,6 @@ $(document).bind("mobileinit", function () {
         $.claimImageUploadAPI = $.claimServiceURL + data.ClaimImageUploadAPI;
         $.claimGetFormAPI = $.claimServiceURL + data.ClaimFormAPI;
 
-        //loading
-
         $.mobile.loader.prototype.options.text = "loading";
         $.mobile.loader.prototype.options.textVisible = false;
         $.mobile.loader.prototype.options.theme = "a";
