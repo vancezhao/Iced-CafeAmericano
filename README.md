@@ -1,4 +1,2 @@
 Iced-CafeAmericano
 ==================
-
-Mobile App
